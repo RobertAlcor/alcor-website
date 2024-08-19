@@ -89,8 +89,10 @@ $_SESSION['token'] = $token;
           "@type": "ContactPoint",
           "telephone": "+4366499124999",
           "contactType": "customer service",
-          "areaServed": "AT",
-          "availableLanguage": ["German"]
+          "areaServed": ["Wien", "Niederösterreich", "Burgenland", "Steiermark", "Salzburg", "Kärnten", "Oberösterreich", "Tirol", "Vorarlberg"],
+          "availableLanguage": ["German", "English", "Polish"],
+          "contactOption": ["TollFree", "HearingImpairedSupported"],
+          "email": "office@webdesign-alcor.at"
         },
         "address": {
           "@type": "PostalAddress",
@@ -98,10 +100,27 @@ $_SESSION['token'] = $token;
           "addressLocality": "Wien",
           "postalCode": "1230",
           "addressCountry": "AT"
-        }
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "sameAs": [
+          "https://www.facebook.com/webagenturalcor",
+          "https://www.instagram.com/webdesign_alcor/"
+        ]
       }
     }
   </script>
+
 </head>
 
 <body>

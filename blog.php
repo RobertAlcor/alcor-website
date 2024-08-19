@@ -29,7 +29,7 @@ $blogposts = glob(dirname(__FILE__) . '/posts/*.php'); // Alle PHP-Dateien im 'p
   <!-- Open Graph / Facebook Meta-Tags -->
   <meta property="og:title" content="Blog - WebDesign Alcor">
   <meta property="og:description" content="Lesen Sie die neuesten Artikel und News zu Webdesign und SEO in Wien und Umgebung. Erhalten Sie wertvolle Tipps und Einblicke von WebDesign Alcor.">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="blog">
   <meta property="og:url" content="https://www.webdesign-alcor.at/blog">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
@@ -93,8 +93,10 @@ $blogposts = glob(dirname(__FILE__) . '/posts/*.php'); // Alle PHP-Dateien im 'p
           <div class="col-lg-12">
             <div class="row g-4">
               <?php
+              // Alle Blogposts laden
               $blogposts = glob(dirname(__FILE__) . '/posts/*.php');
 
+              // Blogposts sortieren und vorbereiten
               if ($blogposts && count($blogposts) > 0) {
                 $posts_with_dates = [];
 
@@ -103,7 +105,7 @@ $blogposts = glob(dirname(__FILE__) . '/posts/*.php'); // Alle PHP-Dateien im 'p
                   include_once $file;
                   $post = ob_get_clean();
 
-                  // Regex überprüfen
+                  // Daten extrahieren
                   preg_match('/<h1[^>]*class="[^"]*blog-h1[^"]*"[^>]*>(.*?)<\/h1>/s', $post, $title_matches);
                   preg_match('/<img[^>]*src="([^"]+)"[^>]*class="[^"]*blog-img[^"]*"/si', $post, $image_matches);
                   preg_match('/<p[^>]*class="[^"]*blog-datum[^"]*"[^>]*>(.*?)<\/p>/s', $post, $date_matches);
@@ -128,7 +130,19 @@ $blogposts = glob(dirname(__FILE__) . '/posts/*.php'); // Alle PHP-Dateien im 'p
                   return $b['timestamp'] - $a['timestamp'];
                 });
 
-                foreach ($posts_with_dates as $post_data) {
+                // Pagination-Parameter
+                $posts_per_page = 6;
+                $total_posts = count($posts_with_dates);
+                $total_pages = ceil($total_posts / $posts_per_page);
+
+                // Aktuelle Seite bestimmen
+                $current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+                $start_index = ($current_page - 1) * $posts_per_page;
+
+                // Anzeige der Beiträge für die aktuelle Seite
+                $current_posts = array_slice($posts_with_dates, $start_index, $posts_per_page);
+
+                foreach ($current_posts as $post_data) {
                   $blog_url = '/posts/' . basename($post_data['file']);
               ?>
                   <div class="col-lg-4 col-md-6 mb-4">
@@ -153,14 +167,40 @@ $blogposts = glob(dirname(__FILE__) . '/posts/*.php'); // Alle PHP-Dateien im 'p
               }
               ?>
             </div>
-            <div class="text-center mt-5">
-              <p class="fw-bold">Weitere spannende Beiträge folgen in Kürze. Bleiben Sie dran!</p>
-            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center mt-4">
+                <?php if ($current_page > 1): ?>
+                  <li class="page-item">
+                    <a class="page-link" href="?page=<?php echo $current_page - 1; ?>" aria-label="Vorherige">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                <?php endif; ?>
+
+                <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+                  <li class="page-item <?php if ($i == $current_page) echo 'active'; ?>">
+                    <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                  </li>
+                <?php endfor; ?>
+
+                <?php if ($current_page < $total_pages): ?>
+                  <li class="page-item">
+                    <a class="page-link" href="?page=<?php echo $current_page + 1; ?>" aria-label="Nächste">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                <?php endif; ?>
+              </ul>
+            </nav>
+
           </div>
         </div>
       </div>
     </section>
   </main>
+
 
 
 

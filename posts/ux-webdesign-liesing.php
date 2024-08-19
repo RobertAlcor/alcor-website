@@ -71,12 +71,12 @@
   <!-- Header Section -->
   <header id="blogheader">
     <div class="container py-5">
-      <div class="row align-items-center">
+      <div class="row align-items-center text-center text-lg-start">
         <div class="col-lg-6">
           <h1 class="blog-h1 fw-bold">Webdesign Liesing - Die Bedeutung von User Experience (UX) im modernen Webdesign</h1>
-          <p class="lead">Erfahren Sie, warum eine positive User Experience (UX) entscheidend für den Erfolg Ihrer Webseite ist und wie unser <a href="/about">Webdesigner in Wien Liesing</a> Ihnen dabei helfen kann, eine benutzerfreundliche Webseite zu gestalten.</p>
+          <p class="lead">Warum eine positive User Experience (UX) entscheidend für den Erfolg Ihrer Webseite ist und wie unser <a href="/about">Webdesigner in Wien Liesing</a> Ihnen dabei helfen kann, eine benutzerfreundliche Webseite zu gestalten.</p>
           <p class="blog-datum">10.08.2024</p>
-          <a href="/kontakt" class="btn-outline btn text-center">Jetzt sorglos anfragen</a>
+          <a href="/kontakt" class="btn-outline btn text-center mb-5 mb-lg-0">Jetzt sorglos anfragen</a>
         </div>
         <div class="col-lg-6">
           <img src="/assets/img/ux-webdesign-liesing.webp" class="img-fluid blog-img rounded-3 shadow" alt="webdesign liesing - user experience ux">
@@ -95,8 +95,8 @@
             <h2 class="text-center mb-4">Was ist User Experience (UX)?</h2>
             <p class="blog-excerpt">User Experience, oft als UX abgekürzt, bezeichnet das gesamte Erlebnis eines Nutzers auf einer Webseite. Dazu gehören die Benutzerfreundlichkeit, die Navigation, die visuelle Gestaltung und die Reaktionsfähigkeit der Webseite. Ein positives Nutzererlebnis ist entscheidend, um Besucher auf Ihrer Seite zu halten und sie in Kunden zu verwandeln.</p>
             <ul class="list-unstyled">
-              <li><i class="bi bi-check-lg icon-s"></i> Einfache Navigation und klare Strukturen sind entscheidend.</li>
-              <li><i class="bi bi-check-lg icon-s"></i> Ästhetisches Design unterstützt die Benutzerfreundlichkeit.</li>
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Einfache Navigation und klare Strukturen sind entscheidend.</li>
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Ästhetisches Design unterstützt die Benutzerfreundlichkeit.</li>
             </ul>
           </div>
           <div class="col-lg-8 offset-lg-2 text-center mt-4">
@@ -145,16 +145,16 @@
             <h2 class="text-center mb-4">Best Practices für UX im modernen Webdesign</h2>
           </div>
           <div class="col-lg-6 text-center">
-            <div class="blogpost-placeholder-img rounded-3">
+            <div class="blogpost-placeholder-img rounded-3 mb-5 mb-lg-0">
               <img src="/assets/img/ux-best-practices.webp" alt="ux best practices webdesign liesing" class="img-fluid shadow rounded-3">
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 text-center text-lg-start">
             <p>Um eine herausragende User Experience zu gewährleisten, sollten einige bewährte Methoden im Webdesign berücksichtigt werden. Unser Webdesigner in Liesing achtet darauf, dass alle Elemente einer Webseite nahtlos zusammenarbeiten, um den Besuchern das bestmögliche Erlebnis zu bieten.</p>
-            <ul class="list-unstyled">
-              <li><i class="bi bi-check-lg icon-s"></i> Verwenden Sie ein responsives Design, das auf allen Geräten funktioniert.</li>
-              <li><i class="bi bi-check-lg icon-s"></i> Sorgen Sie für schnelle Ladezeiten und eine klare Struktur.</li>
-              <li><i class="bi bi-check-lg icon-s"></i> Nutzen Sie ansprechende und gut lesbare Schriftarten.</li>
+            <ul class="list-unstyled text-start">
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Verwenden Sie ein responsives Design, das auf allen Geräten funktioniert.</li>
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Sorgen Sie für schnelle Ladezeiten und eine klare Struktur.</li>
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Nutzen Sie ansprechende und gut lesbare Schriftarten.</li>
             </ul>
           </div>
         </div>
@@ -170,7 +170,7 @@
             <p>Unser <a href="/about">Webdesign Standort in Wien Liesing</a> ist spezialisiert auf die Erstellung von benutzerfreundlichen Webseiten, die nicht nur gut aussehen, sondern auch optimal funktionieren. Durch den Einsatz modernster UX-Prinzipien und -Technologien sorgen wir dafür, dass Ihre Webseite Ihre Besucher begeistert und Ihr Geschäftserfolg steigt.</p>
           </div>
         </div>
-        <div class="row mt-5 align-items-center">
+        <div class="row mt-5 align-items-center text-center text-lg-start">
           <div class="col-lg-6">
             <h3>Individuelle UX-Strategien</h3>
             <p>Wir entwickeln maßgeschneiderte UX-Strategien, die speziell auf die Bedürfnisse Ihrer Zielgruppe abgestimmt sind. So stellen wir sicher, dass Ihre Webseite genau die richtige Botschaft vermittelt und die gewünschte Wirkung erzielt.</p>

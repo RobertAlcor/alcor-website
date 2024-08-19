@@ -3,7 +3,7 @@
     <div class="row align-items-center">
       <div class="col-lg-4 text-center text-md-start mb-4 mb-lg-0">
         <img src="/assets/logo/alcorlogoweiss.svg" alt="Webdesign Wien, Webagentur Wien, Webdesigner Wien Logo" class="img-fluid footer-logo mb-5">
-        <p class="mb-1"><a href="tel:+4366499124999" class="text-light contact-link"><i class="bi bi-telephone-fill me-2"></i>+4366499124999</a></p>
+        <p class="mb-1"><a href="tel:+4366499124999" class="text-light contact-link"><i class="bi bi-telephone-fill me-2"></i>+43 664 99 124 999</a></p>
         <p><a href="mailto:office@webdesign-alcor.at" class="text-light contact-link"><i class="bi bi-envelope-fill me-2"></i>office@webdesign-alcor.at</a></p>
       </div>
       <div class="col-lg-4 text-center mb-4 mb-lg-0">

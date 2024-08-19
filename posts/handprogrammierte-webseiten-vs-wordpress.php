@@ -71,12 +71,12 @@
   <!-- Header Section -->
   <header id="blogheader">
     <div class="container py-5">
-      <div class="row align-items-center">
+      <div class="row align-items-center text-center text-lg-start">
         <div class="col-lg-6">
           <h1 class="blog-h1 fw-bold">Webdesign Agentur – Handprogrammierte Webseiten vs. WordPress</h1>
-          <p class="lead">Erfahren Sie, warum handprogrammierte Webseiten oft die bessere Wahl sind und wie unsere <a href="/about">Webdesign Agentur</a> Ihnen dabei helfen kann.</p>
+          <p class="lead">Warum handprogrammierte Webseiten oft die bessere Wahl sind und wie unsere <a href="/about">Webdesign Agentur</a> Ihnen dabei helfen kann.</p>
           <p class="blog-datum">13.08.2024</p>
-          <a href="/kontakt" class="btn-outline btn text-center">Jetzt sorglos anfragen</a>
+          <a href="/kontakt" class="btn-outline btn text-center mb-5 mb-lg-0">Jetzt sorglos anfragen</a>
         </div>
         <div class="col-lg-6">
           <img src="/assets/img/wordpress-vs-vscode-html5.webp" class="img-fluid blog-img rounded-3 shadow" alt="webdesign agentur - perfekte webdesign-lösungen">
@@ -93,10 +93,10 @@
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
             <h2 class="text-center mb-4">Maßgeschneiderte Lösungen statt vorgefertigte Templates</h2>
-            <p class="blog-excerpt">Wenn Sie auf der Suche nach einer einzigartigen, passgenauen Lösung für Ihre Webseite sind, sollten Sie eine handprogrammierte Webseite in Betracht ziehen. Während WordPress eine Vielzahl von vorgefertigten Templates bietet, sind diese oft nicht perfekt auf die individuellen Bedürfnisse Ihres Unternehmens abgestimmt. Eine handprogrammierte Webseite hingegen ermöglicht es Ihnen, jedes Detail genau nach Ihren Wünschen zu gestalten – ohne Kompromisse.</p>
+            <p class="blog-excerpt text-center">Wenn Sie auf der Suche nach einer einzigartigen, passgenauen Lösung für Ihre Webseite sind, sollten Sie eine handprogrammierte Webseite in Betracht ziehen. Während WordPress eine Vielzahl von vorgefertigten Templates bietet, sind diese oft nicht perfekt auf die individuellen Bedürfnisse Ihres Unternehmens abgestimmt. Eine handprogrammierte Webseite hingegen ermöglicht es Ihnen, jedes Detail genau nach Ihren Wünschen zu gestalten – ohne Kompromisse.</p>
             <ul class="list-unstyled">
-              <li><i class="bi bi-check-lg icon-s"></i> Eine handprogrammierte Webseite wird genau auf Ihre Anforderungen zugeschnitten.</li>
-              <li><i class="bi bi-check-lg icon-s"></i> Sie bietet maximale Flexibilität bei Design und Funktionalität.</li>
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Eine handprogrammierte Webseite wird genau auf Ihre Anforderungen zugeschnitten.</li>
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Sie bietet maximale Flexibilität bei Design und Funktionalität.</li>
             </ul>
           </div>
           <div class="col-lg-8 offset-lg-2 text-center mt-4">
@@ -149,11 +149,11 @@
               <img src="/assets/img/seo-vorteile-handprogrammierte-webseiten.webp" alt="seo vorteile handprogrammierte webseiten" class="img-fluid shadow rounded-3">
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 text-center text-lg-start mt-5 mt-lg-0">
             <p>Eine handprogrammierte Webseite bietet erhebliche Vorteile für die Suchmaschinenoptimierung (SEO). Der Code ist schlanker und besser strukturiert, was es Suchmaschinen erleichtert, Ihre Seite zu crawlen und zu indexieren. Darüber hinaus können SEO-Elemente, wie Meta-Tags und strukturierte Daten, gezielt und präzise implementiert werden, um eine optimale Sichtbarkeit in den Suchergebnissen zu gewährleisten.</p>
-            <ul class="list-unstyled">
-              <li><i class="bi bi-check-lg icon-s"></i> Schlanker Code verbessert die Crawl-Effizienz.</li>
-              <li><i class="bi bi-check-lg icon-s"></i> Gezielte SEO-Optimierung durch präzise Implementierung.</li>
+            <ul class="list-unstyled text-start">
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Schlanker Code verbessert die Crawl-Effizienz.</li>
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Gezielte SEO-Optimierung durch präzise Implementierung.</li>
             </ul>
           </div>
         </div>
@@ -170,7 +170,7 @@
           </div>
         </div>
         <div class="row mt-5 align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6 text-center text-lg-start">
             <h3>Flexibilität & Skalierbarkeit</h3>
             <p>Eine handprogrammierte Webseite bietet Ihnen die Flexibilität, jede gewünschte Funktion zu implementieren und Ihre Webseite jederzeit zu erweitern oder anzupassen. Diese Flexibilität ist besonders wichtig für wachsende Unternehmen, die ihre Online-Präsenz kontinuierlich weiterentwickeln möchten.</p>
           </div>

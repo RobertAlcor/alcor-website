@@ -24,7 +24,7 @@
   <!-- Open Graph / Facebook Meta-Tags -->
   <meta property="og:title" content="WebDesign Wien - Professionelles Webdesign und SEO in Wien und Umgebung">
   <meta property="og:description" content="Alcor bietet professionelles Webdesign und SEO in Wien. Kontaktieren Sie uns jetzt für Webseiten und effektive Suchmaschinenoptimierung.">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="webdesign">
   <meta property="og:url" content="https://www.webdesign-alcor.at/services">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
@@ -101,15 +101,25 @@
           "@type": "ContactPoint",
           "telephone": "+4366499124999",
           "contactType": "customer service",
-          "areaServed": "AT",
-          "availableLanguage": ["German"]
+          "areaServed": ["Wien", "Niederösterreich", "Burgenland", "Steiermark", "Salzburg", "Kärnten", "Oberösterreich", "Tirol", "Vorarlberg"],
+          "availableLanguage": ["German", "English", "Polish"],
         }
       },
-      "areaServed": "Wien",
-      "serviceOutput": "Individuelle Webdesign-Lösungen, die Ihre Marke zum Strahlen bringen.",
+      "areaServed": ["Wien", "Niederösterreich", "Burgenland", "Steiermark", "Salzburg", "Kärnten", "Oberösterreich", "Tirol", "Vorarlberg"],
+      "serviceAudience": {
+        "@type": "Audience",
+        "audienceType": "Business"
+      },
+      "serviceOutput": [
+        "Individuelle Webdesign-Lösungen",
+        "Suchmaschinenoptimierung",
+        "Logo-Design",
+        "Visitenkartendesign"
+      ],
       "additionalType": "http://www.productontology.org/id/Web_design"
     }
   </script>
+
 
 </head>
 

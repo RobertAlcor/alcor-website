@@ -73,43 +73,45 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Webdesign Services",
-      "provider": {
-        "@type": "Organization",
-        "name": "WebDesign-Alcor",
-        "url": "https://www.webdesign-alcor.at/about",
-        "logo": "https://www.webdesign-alcor.at/assets/logo/alcor.jpg",
-        "image": [
-          "https://www.webdesign-alcor.at/assets/img/ogwebdesign.jpg",
-          "https://www.webdesign-alcor.at/assets/logo/webdesign-wien.jpg"
-        ],
-        "description": "WebDesign Alcor in Wien: Webdesign, SEO, Logo- und Visitenkartendesign. Professionelle und maßgeschneiderte Lösungen für Ihr Unternehmen.",
-        "telephone": "+4366499124999",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Johann-Teufel-Gasse 39-47/11",
-          "addressLocality": "Wien",
-          "postalCode": "1230",
-          "addressCountry": "AT"
-        },
-        "sameAs": [
-          "https://www.facebook.com/webagenturalcor",
-          "https://www.instagram.com/webdesign_alcor/"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+4366499124999",
-          "contactType": "customer service",
-          "areaServed": "AT",
-          "availableLanguage": ["German"]
-        }
+      "@type": "Organization",
+      "name": "WebDesign-Alcor",
+      "url": "https://www.webdesign-alcor.at/about",
+      "logo": "https://www.webdesign-alcor.at/assets/logo/alcor.jpg",
+      "image": [
+        "https://www.webdesign-alcor.at/assets/img/ogwebdesign.jpg",
+        "https://www.webdesign-alcor.at/assets/logo/webdesign-wien.jpg"
+      ],
+      "description": "WebDesign Alcor in Wien: Webdesign, SEO, Logo- und Visitenkartendesign. Professionelle und maßgeschneiderte Lösungen für Ihr Unternehmen.",
+      "telephone": "+4366499124999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Johann-Teufel-Gasse 39-47/11",
+        "addressLocality": "Wien",
+        "postalCode": "1230",
+        "addressCountry": "AT"
       },
+      "sameAs": [
+        "https://www.facebook.com/webagenturalcor",
+        "https://www.instagram.com/webdesign_alcor/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+4366499124999",
+        "contactType": "customer service",
+        "areaServed": ["Wien", "Niederösterreich", "Burgenland", "Steiermark", "Salzburg", "Kärnten", "Oberösterreich", "Tirol", "Vorarlberg"],
+        "availableLanguage": ["German", "English", "Polish"]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Robert Alchimowicz"
+      },
+      "foundingDate": "2020-01-01",
       "areaServed": "Wien",
-      "serviceOutput": "Individuelle Webdesign-Lösungen, die Ihre Marke zum Strahlen bringen.",
-      "additionalType": "http://www.productontology.org/id/Web_design"
+      "award": "Best Web Design Agency in Wien 2023",
+      "slogan": "Ihr Erfolg ist unser Ziel"
     }
   </script>
+
 </head>
 
 <body>
@@ -163,7 +165,7 @@
       <div class="container">
         <div class="row align-items-center justify-content-center my-5">
           <div class="col-md-8 text-center">
-            <h2 class="fw-bold mb-4"><strong>Unser engagiertes Team</strong></h2>
+            <h2 class="fw-bold mb-4 text-accent"><strong>Unser engagiertes Team</strong></h2>
             <p class="mb-3">
               Unser Team besteht aus erfahrenen Webdesignern und Entwicklern in Wien. Unsere Mitarbeiter arbeiten mit Leidenschaft und machen auch gerne Überstunden, um die vollste Kundenzufriedenheit zu erreichen. Bei uns ist der Kunde immer König!
             </p>

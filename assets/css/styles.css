@@ -4,7 +4,7 @@
   --green: #198754;
   --dark: rgba(46, 46, 46, 0.8);
   --black: #000000;
-  --accent: #0056b3;
+  --accent: #017bfd;
   --accent2: #2f3231;
   --silber: #c0c0c0;
   --light-grey: #f7f7f8;
@@ -1295,7 +1295,7 @@ section {
 }
 
 .blogpost-section:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
 }
 
 .blogpost-section h3 {
@@ -1314,6 +1314,17 @@ section {
   font-size: 1.5rem;
   color: #555;
   padding: 40px;
+}
+
+.pagination .page-item .page-link {
+  color: var(--accent);
+  border-radius: var(--border-radius);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
 }
 
 /* BLOG END */

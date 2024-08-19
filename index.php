@@ -24,7 +24,7 @@
   <!-- Open Graph / Facebook Meta-Tags -->
   <meta property="og:title" content="WebDesign Alcor - Professionelles Webdesign in Wien und Umgebung">
   <meta property="og:description" content="Alcor bietet professionelles Webdesign und SEO in Wien. Kontaktieren Sie uns jetzt für Webseiten und effektive Suchmaschinenoptimierung.">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="webdesign">
   <meta property="og:url" content="https://www.webdesign-alcor.at/">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
@@ -92,11 +92,16 @@
       },
       "openingHoursSpecification": [{
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
         "opens": "09:00",
         "closes": "18:00"
       }],
-      "areaServed": "Wien",
       "priceRange": "€€-€€€",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -110,7 +115,7 @@
             "name": "BESTCONNECTION"
           },
           "datePublished": "2024-01-10",
-          "description": "Äußerst Zufrieden mit der Zusammenarbeit. Die Umsetzung hat problemlos funktioniert sowie Wünsche und Änderungen wurden schnell berücksichtig. Missverständnisse konnten gut aus dem Weg geräumt werden. Ich danke vielmals für die Zusammenarbeit und kann WebDesign-Alcor nur weiterempfehlen.",
+          "description": "Äußerst Zufrieden mit der Zusammenarbeit. Die Umsetzung hat problemlos funktioniert sowie Wünsche und Änderungen wurden schnell berücksichtigt. Missverständnisse konnten gut aus dem Weg geräumt werden. Ich danke vielmals für die Zusammenarbeit und kann WebDesign-Alcor nur weiterempfehlen.",
           "reviewRating": {
             "@type": "Rating",
             "ratingValue": "5",
@@ -188,37 +193,6 @@
           }
         }
       ],
-      "serviceOffered": [{
-          "@type": "Service",
-          "name": "Webdesign",
-          "description": "Individuelle Webdesign-Lösungen, die Ihre Marke zum Strahlen bringen."
-        },
-        {
-          "@type": "Service",
-          "name": "Suchmaschinenoptimierung",
-          "description": "Steigerung Ihrer Sichtbarkeit in Suchmaschinen."
-        },
-        {
-          "@type": "Service",
-          "name": "Logoerstellung",
-          "description": "Kreative und einprägsame Logodesigns, die Ihre Unternehmensidentität widerspiegeln."
-        },
-        {
-          "@type": "Service",
-          "name": "Visitenkarten",
-          "description": "Professionell gestaltete Visitenkarten, die einen bleibenden Eindruck hinterlassen."
-        },
-        {
-          "@type": "Service",
-          "name": "Briefpapier",
-          "description": "Hochwertiges Briefpapier, angepasst an Ihr Unternehmensdesign."
-        },
-        {
-          "@type": "Service",
-          "name": "Webentwicklung",
-          "description": "Technisch ausgereifte Webentwicklung für moderne und funktionale Websites."
-        }
-      ],
       "sameAs": [
         "https://www.facebook.com/webagenturalcor",
         "https://www.instagram.com/webdesign_alcor/"
@@ -227,11 +201,14 @@
         "@type": "ContactPoint",
         "telephone": "+4366499124999",
         "contactType": "customer service",
-        "areaServed": "AT",
-        "availableLanguage": ["German"]
-      }
+        "areaServed": ["Wien", "Niederösterreich", "Burgenland", "Steiermark", "Salzburg", "Kärnten", "Oberösterreich", "Tirol", "Vorarlberg"],
+        "availableLanguage": ["German", "English", "Polish"]
+      },
+      "slogan": "Ihr Erfolg ist unser Ziel"
     }
   </script>
+
+
 </head>
 
 <body>

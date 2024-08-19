@@ -5,13 +5,13 @@
   <?php include_once __DIR__ . '/../includes/cookie-banner.php'; ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Webdesign Agentur - Handprogrammierte Webseiten vs. WordPress</title>
+  <title>Webdesign Agentur - Local SEO: Optimierung für lokale Suchanfragen</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/posts/handprogrammierte-webseiten-vs-wordpress">
-  <meta name="description" content="Erfahren Sie von unserer Webdesign Agentur, warum eine handprogrammierte Webseite oft die bessere Wahl ist als eine WordPress-Webseite.">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/posts/local-seo-optimierung">
+  <meta name="description" content="Wie Sie von unserer Webdesign Agentur, wie Sie Ihre Webseite für lokale Suchanfragen optimieren und mehr Kunden vor Ort gewinnen können.">
   <meta name="robots" content="index, follow">
-  <meta name="keywords" content="Webdesign Agentur, handprogrammierte Webseiten, WordPress Webdesign, Webentwicklung, SEO, maßgeschneiderte Webdesign-Lösungen">
+  <meta name="keywords" content="Webdesign Agentur, Local SEO, lokale Suchanfragen, Google My Business, lokale Keywords, SEO Optimierung, regionale Suchmaschinenoptimierung">
   <meta name="author" content="WebDesign Alcor">
   <meta name="page-topic" content="Business">
   <meta name="page-type" content="Webdesign Services">
@@ -21,19 +21,19 @@
   <meta name="revisit-after" content="7 days">
 
   <!-- Open Graph / Facebook Meta-Tags -->
-  <meta property="og:title" content="WebDesign Alcor - Handprogrammierte Webseiten vs. WordPress">
-  <meta property="og:description" content="Unsere Webdesign Agentur erklärt, warum handprogrammierte Webseiten oft überlegen sind. Erfahren Sie mehr über maßgeschneiderte Webdesign-Lösungen.">
+  <meta property="og:title" content="WebDesign Alcor - Local SEO: Optimierung für lokale Suchanfragen">
+  <meta property="og:description" content="Unsere Webdesign Agentur zeigt Ihnen, wie Sie Ihre Webseite für lokale Suchanfragen optimieren können, um Ihre Reichweite in Ihrer Region zu erhöhen.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/posts/handprogrammierte-webseiten-vs-wordpress">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/posts/local-seo-optimierung">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
 
   <!-- Twitter Card Daten -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:description" content="Unsere Webdesign Agentur erklärt, warum handprogrammierte Webseiten oft überlegen sind. Erfahren Sie mehr über maßgeschneiderte Webdesign-Lösungen.">
-  <meta name="twitter:title" content="WebDesign Alcor - Handprogrammierte Webseiten vs. WordPress">
-  <meta name="twitter:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
+  <meta name="twitter:description" content="Unsere Webdesign Agentur zeigt Ihnen, wie Sie Ihre Webseite für lokale Suchanfragen optimieren können, um Ihre Reichweite in Ihrer Region zu erhöhen.">
+  <meta name="twitter:title" content="WebDesign Alcor - Local SEO: Optimierung für lokale Suchanfragen">
+  <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta name="twitter:site" content="@deinTwitterName">
   <meta name="twitter:creator" content="@deinTwitterName">
 
@@ -72,14 +72,14 @@
   <header id="blogheader">
     <div class="container py-5">
       <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h1 class="blog-h1 fw-bold">Webdesign Agentur – Handprogrammierte Webseiten vs. WordPress</h1>
-          <p class="lead">Erfahren Sie, warum handprogrammierte Webseiten oft die bessere Wahl sind und wie unsere <a href="/about">Webdesign Agentur</a> Ihnen dabei helfen kann.</p>
-          <p class="blog-datum">13.08.2024</p>
-          <a href="/kontakt" class="btn-outline btn text-center">Jetzt sorglos anfragen</a>
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="blog-h1 fw-bold">Webdesign Agentur – Local SEO: Optimierung für lokale Suchanfragen</h1>
+          <p class="lead">Wie unsere <a href="/about">Webdesign Agentur</a> Ihre Webseite für lokale Suchanfragen optimieren kann, um Ihre regionale Reichweite zu maximieren.</p>
+          <p class="blog-datum">18.08.2024</p>
+          <a href="/kontakt" class="btn-outline btn text-center mb-5 mb-lg-0">Jetzt sorglos anfragen</a>
         </div>
         <div class="col-lg-6">
-          <img src="/assets/img/wordpress-vs-vscode-html5.webp" class="img-fluid blog-img rounded-3 shadow" alt="webdesign agentur - perfekte webdesign-lösungen">
+          <img src="/assets/img/local-seo.webp" class="img-fluid blog-img rounded-3 shadow" alt="local seo optimierung für webdesign">
         </div>
       </div>
     </div>
@@ -87,96 +87,96 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Section 1: Maßgeschneiderte Lösungen statt vorgefertigte Templates -->
+    <!-- Section 1: Warum Local SEO wichtig ist -->
     <section class="blogpost-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
-            <h2 class="text-center mb-4">Maßgeschneiderte Lösungen statt vorgefertigte Templates</h2>
-            <p class="blog-excerpt">Wenn Sie auf der Suche nach einer einzigartigen, passgenauen Lösung für Ihre Webseite sind, sollten Sie eine handprogrammierte Webseite in Betracht ziehen. Während WordPress eine Vielzahl von vorgefertigten Templates bietet, sind diese oft nicht perfekt auf die individuellen Bedürfnisse Ihres Unternehmens abgestimmt. Eine handprogrammierte Webseite hingegen ermöglicht es Ihnen, jedes Detail genau nach Ihren Wünschen zu gestalten – ohne Kompromisse.</p>
-            <ul class="list-unstyled">
-              <li><i class="bi bi-check-lg icon-s"></i> Eine handprogrammierte Webseite wird genau auf Ihre Anforderungen zugeschnitten.</li>
-              <li><i class="bi bi-check-lg icon-s"></i> Sie bietet maximale Flexibilität bei Design und Funktionalität.</li>
+            <h2 class="text-center mb-4">Warum Local SEO wichtig ist</h2>
+            <p class="blog-excerpt text-center">In einer immer digitaler werdenden Welt ist es entscheidend, dass lokale Unternehmen online gut sichtbar sind. Local SEO hilft Ihnen, Ihre Webseite für Nutzer in Ihrer Nähe zu optimieren und somit mehr potenzielle Kunden anzusprechen, die nach Dienstleistungen und Produkten in ihrer Umgebung suchen.</p>
+            <ul class="list-unstyled offset-lg-3">
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Steigern Sie die Sichtbarkeit in lokalen Suchergebnissen.</li>
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Ziehen Sie gezielt Kunden aus Ihrer Region an.</li>
             </ul>
           </div>
           <div class="col-lg-8 offset-lg-2 text-center mt-4">
             <div class="blogpost-placeholder-img rounded-3">
-              <img src="/assets/img/handprogrammiertes-webdesign-agentur-vs-wordpress.webp" class="img-fluid rounded-3 shadow" alt="handprogrammierte webseite vs wordpress">
+              <img src="/assets/img/local-seo-optimierung.webp" class="img-fluid rounded-3 shadow" alt="local seo vorteile">
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 2: Performance und Ladezeiten -->
+    <!-- Section 2: Optimierung Ihrer Google My Business Seite -->
     <section class="blogpost-section">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-4">
             <div class="mb-4">
-              <i class="bi bi-speedometer2 icon-m"></i>
+              <i class="bi bi-geo-alt icon-m"></i>
             </div>
-            <h3>Schnelle Ladezeiten</h3>
-            <p>Handprogrammierte Webseiten zeichnen sich durch ihre schlanke, effiziente Programmierung aus, die zu schnellen Ladezeiten führt. Im Gegensatz dazu können WordPress-Webseiten durch unnötige Plugins und Skripte verlangsamt werden, was negative Auswirkungen auf das Nutzererlebnis und das Suchmaschinenranking haben kann.</p>
-          </div>
-          <div class="col-md-4">
-            <div class="mb-4">
-              <i class="bi bi-lock icon-m"></i>
-            </div>
-            <h3>Hohe Sicherheit</h3>
-            <p>WordPress-Webseiten sind aufgrund ihrer Popularität ein häufiges Ziel für Hackerangriffe. Handprogrammierte Webseiten hingegen bieten ein höheres Maß an Sicherheit, da sie nicht auf gängige CMS-Plattformen angewiesen sind und individuell abgesichert werden können. So bleibt Ihre Webseite vor potenziellen Bedrohungen besser geschützt.</p>
+            <h3>Google My Business</h3>
+            <p>Ein optimiertes Google My Business-Profil ist der Schlüssel zur lokalen Sichtbarkeit. Es ermöglicht Ihnen, in den Google-Suchergebnissen und auf Google Maps prominent angezeigt zu werden, wenn potenzielle Kunden nach Ihren Dienstleistungen in Ihrer Region suchen.</p>
           </div>
           <div class="col-md-4">
             <div class="mb-4">
               <i class="bi bi-pencil-square icon-m"></i>
             </div>
-            <h3>Individuelle Anpassungen</h3>
-            <p>Eine handprogrammierte Webseite bietet Ihnen die Möglichkeit, jede Funktion genau so zu gestalten, wie Sie es benötigen. Ohne die Einschränkungen von vorgefertigten Themes oder Plugins können Sie sicherstellen, dass Ihre Webseite genau Ihren Vorstellungen entspricht und sich problemlos an zukünftige Anforderungen anpassen lässt.</p>
+            <h3>Aktualisierung Ihrer Informationen</h3>
+            <p>Stellen Sie sicher, dass alle Informationen in Ihrem Google My Business-Profil, wie Öffnungszeiten, Adresse und Kontaktdaten, stets aktuell und korrekt sind. Dies verbessert nicht nur Ihre Sichtbarkeit, sondern erhöht auch die Wahrscheinlichkeit, dass Kunden Sie kontaktieren.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-4">
+              <i class="bi bi-chat-square-text icon-m"></i>
+            </div>
+            <h3>Kundenbewertungen</h3>
+            <p>Kundenbewertungen spielen eine entscheidende Rolle im lokalen SEO. Ermutigen Sie zufriedene Kunden, Bewertungen zu hinterlassen, und reagieren Sie professionell auf Feedback. Positive Bewertungen steigern Ihre Glaubwürdigkeit und verbessern Ihr Ranking in den lokalen Suchergebnissen.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 3: SEO-Vorteile handprogrammierter Webseiten -->
+    <!-- Section 3: Nutzung lokaler Keywords -->
     <section class="blogpost-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8 offset-lg-2">
-            <h2 class="text-center mb-4">SEO-Vorteile handprogrammierter Webseiten</h2>
+            <h2 class="text-center mb-4">Nutzung lokaler Keywords</h2>
           </div>
           <div class="col-lg-6 text-center">
             <div class="blogpost-placeholder-img rounded-3">
-              <img src="/assets/img/seo-vorteile-handprogrammierte-webseiten.webp" alt="seo vorteile handprogrammierte webseiten" class="img-fluid shadow rounded-3">
+              <img src="/assets/img/lokale-keywords-seo.webp" alt="lokale keywords für seo" class="img-fluid shadow rounded-3">
             </div>
           </div>
-          <div class="col-lg-6">
-            <p>Eine handprogrammierte Webseite bietet erhebliche Vorteile für die Suchmaschinenoptimierung (SEO). Der Code ist schlanker und besser strukturiert, was es Suchmaschinen erleichtert, Ihre Seite zu crawlen und zu indexieren. Darüber hinaus können SEO-Elemente, wie Meta-Tags und strukturierte Daten, gezielt und präzise implementiert werden, um eine optimale Sichtbarkeit in den Suchergebnissen zu gewährleisten.</p>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <p>Die Auswahl und Integration von lokalen Keywords ist entscheidend, um in den Suchergebnissen Ihrer Region gut platziert zu sein. Verwenden Sie gezielt Suchbegriffe, die Ihre Stadt oder Region sowie die angebotenen Dienstleistungen und Produkte enthalten. Dies erhöht die Relevanz Ihrer Webseite für lokale Suchanfragen.</p>
             <ul class="list-unstyled">
-              <li><i class="bi bi-check-lg icon-s"></i> Schlanker Code verbessert die Crawl-Effizienz.</li>
-              <li><i class="bi bi-check-lg icon-s"></i> Gezielte SEO-Optimierung durch präzise Implementierung.</li>
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Verwenden Sie Keywords wie "Webdesign in [Stadt]" oder "SEO-Agentur [Region]".</li>
+              <li><i class="bi bi-check-lg icon-s me-2"></i> Kombinieren Sie lokale Suchbegriffe mit spezifischen Dienstleistungen.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 4: Unabhängigkeit von Drittanbietern -->
+    <!-- Section 4: Optimierung der Webseitenstruktur für Local SEO -->
     <section class="blogpost-section">
-      <div class="container">
+      <div class="container text-center">
         <div class="row align-items-center">
-          <div class="col-lg-8 offset-lg-2 text-center">
-            <h2 class="mb-4">Unabhängigkeit von Drittanbietern</h2>
-            <p>Mit einer handprogrammierten Webseite sind Sie nicht auf Drittanbieter-Plattformen, Plugins oder Themes angewiesen. Dies bedeutet, dass Sie die volle Kontrolle über Ihre Webseite haben und nicht von externen Entwicklern abhängig sind. Ihre Webseite bleibt langfristig funktionsfähig und kann jederzeit an neue Anforderungen angepasst werden.</p>
+          <div class="col-lg-8 offset-lg-2">
+            <h2 class="mb-4">Optimierung der Webseitenstruktur für Local SEO</h2>
+            <p>Die Struktur Ihrer Webseite spielt eine wesentliche Rolle bei der lokalen Suchmaschinenoptimierung. Stellen Sie sicher, dass Ihre Webseite leicht navigierbar ist und klare Strukturen aufweist, die Suchmaschinen dabei helfen, Ihre Inhalte zu indexieren und Ihre Relevanz für lokale Suchanfragen zu erkennen.</p>
           </div>
         </div>
-        <div class="row mt-5 align-items-center">
+        <div class="row mt-5 align-items-center text-lg-start">
           <div class="col-lg-6">
-            <h3>Flexibilität & Skalierbarkeit</h3>
-            <p>Eine handprogrammierte Webseite bietet Ihnen die Flexibilität, jede gewünschte Funktion zu implementieren und Ihre Webseite jederzeit zu erweitern oder anzupassen. Diese Flexibilität ist besonders wichtig für wachsende Unternehmen, die ihre Online-Präsenz kontinuierlich weiterentwickeln möchten.</p>
+            <h3>Erstellen Sie eine Standortseite</h3>
+            <p>Wenn Ihr Unternehmen an mehreren Standorten tätig ist, erstellen Sie individuelle Standortseiten. Diese Seiten sollten spezifische Informationen über jeden Standort enthalten, einschließlich Adresse, Kontaktdaten und relevanter lokaler Keywords.</p>
           </div>
           <div class="col-lg-6 text-center">
             <div class="blogpost-placeholder-img rounded-3">
-              <img src="/assets/img/flexibilitaet-skalierbarkeit-webdesign.webp" alt="flexibilität und skalierbarkeit webdesign" class="img-fluid rounded-3 shadow">
+              <img src="/assets/img/standort-seo-seiten.webp" alt="seo für mehrere standorte" class="img-fluid rounded-3 shadow">
             </div>
           </div>
         </div>
@@ -188,8 +188,8 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8 offset-lg-2 text-center">
-            <h2 class="text-center mb-4">Fazit: Warum eine handprogrammierte Webseite die bessere Wahl ist</h2>
-            <p>Als erfahrene <a href="/about">Webdesign Agentur</a> wissen wir, dass eine handprogrammierte Webseite in vielen Fällen die bessere Wahl sein kann. Sie bietet maßgeschneiderte Lösungen, bessere Performance, höhere Sicherheit und optimale SEO-Möglichkeiten. Wenn Sie auf der Suche nach einer zukunftssicheren und leistungsstarken Webseite sind, könnte eine handprogrammierte Lösung genau das Richtige für Ihr Unternehmen sein.</p>
+            <h2 class="text-center mb-4">Fazit: Erfolgreiche lokale SEO für Ihr Unternehmen</h2>
+            <p>Local SEO ist ein mächtiges Werkzeug, um die Sichtbarkeit Ihres Unternehmens in Ihrer Region zu erhöhen. Durch die Optimierung Ihrer Webseite und Google My Business-Seite sowie die gezielte Nutzung lokaler Keywords können Sie sicherstellen, dass Ihr Unternehmen in den lokalen Suchergebnissen gut sichtbar ist. Unsere <a href="/about">Webdesign Agentur</a> unterstützt Sie gerne dabei, Ihre lokale SEO-Strategie zu entwickeln und umzusetzen.</p>
             <a href="/kontakt" class="btn btn-primary mt-3"><i class="bi bi-envelope-fill me-2"></i> Kontaktieren Sie uns</a>
           </div>
         </div>
