@@ -1,0 +1,92 @@
+# Robots.txt for webdesign-alcor.at
+
+User-agent: *
+# Block specific sensitive or non-important files and directories
+
+# Block private directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /Users\alchi\AppData\Roaming\npm-cache/
+
+# Block sensitive files and configuration files
+Disallow: /.env
+Disallow: /.htaccess
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /package-lock.json
+Disallow: /package.json
+Disallow: /webpack.config.js
+Disallow: /gulpfile.js
+Disallow: /fiveserver.config.js
+
+# Block error pages
+Disallow: /400.php
+Disallow: /401.php
+Disallow: /403.php
+Disallow: /404.php
+Disallow: /405.php
+Disallow: /408.php
+Disallow: /422.php
+Disallow: /429.php
+Disallow: /500.php
+Disallow: /501.php
+Disallow: /502.php
+Disallow: /503.php
+Disallow: /504.php
+Disallow: /505.php
+
+# Block specific file types
+Disallow: /*.sh$
+Disallow: /*.git$
+
+# Block URL parameters (these can create duplicate content issues)
+Disallow: /*?*
+
+# Allow all assets
+Allow: /assets/
+
+# Allow Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Allow Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Allow Slurp Bot (Yahoo)
+User-agent: Slurp
+Allow: /
+
+# Allow DuckDuckBot (DuckDuckGo)
+User-agent: DuckDuckBot
+Allow: /
+
+# Allow Baidu Spider
+User-agent: Baiduspider
+Allow: /
+
+# Allow Yandex Bot
+User-agent: Yandex
+Allow: /
+
+# Allow Sogou Spider
+User-agent: Sogou
+Allow: /
+
+# Allow Exabot
+User-agent: Exabot
+Allow: /
+
+# Allow Facebook External Hit
+User-agent: facebookexternalhit
+Allow: /
+
+# Allow Twitterbot
+User-agent: Twitterbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.webdesign-alcor.at/sitemap.xml
