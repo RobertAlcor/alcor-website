@@ -5,11 +5,11 @@
   <?php include_once __DIR__ . '/../includes/cookie-banner.php'; ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Webdesign Agentur - Handprogrammierte Webseiten vs. WordPress</title>
+  <title>Handprogrammierte Webseiten vs. WordPress | Alcor</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/posts/handprogrammierte-webseiten-vs-wordpress">
-  <meta name="description" content="Erfahren Sie von unserer Webdesign Agentur, warum eine handprogrammierte Webseite oft die bessere Wahl ist als eine WordPress-Webseite.">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/posts/handprogrammierte-webseiten-vs-wordpress.php">
+  <meta name="description" content="Lesen Sie die Vorteile handprogrammierter Webseiten vs WordPress. Warum optimale Lösungen für Performance, Sicherheit und SEO überlegen sind.">
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="Webdesign Agentur, handprogrammierte Webseiten, WordPress Webdesign, Webentwicklung, SEO, maßgeschneiderte Webdesign-Lösungen">
   <meta name="author" content="WebDesign Alcor">
@@ -21,18 +21,18 @@
   <meta name="revisit-after" content="7 days">
 
   <!-- Open Graph / Facebook Meta-Tags -->
-  <meta property="og:title" content="WebDesign Alcor - Handprogrammierte Webseiten vs. WordPress">
-  <meta property="og:description" content="Unsere Webdesign Agentur erklärt, warum handprogrammierte Webseiten oft überlegen sind. Erfahren Sie mehr über maßgeschneiderte Webdesign-Lösungen.">
+  <meta property="og:title" content="Handprogrammierte Webseiten vs. WordPress | Alcor">
+  <meta property="og:description" content="Lesen Sie die Vorteile handprogrammierter Webseiten vs WordPress. Warum optimale Lösungen für Performance, Sicherheit und SEO überlegen sind.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/posts/handprogrammierte-webseiten-vs-wordpress">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/posts/handprogrammierte-webseiten-vs-wordpress.php">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-agentur.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
 
   <!-- Twitter Card Daten -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:description" content="Unsere Webdesign Agentur erklärt, warum handprogrammierte Webseiten oft überlegen sind. Erfahren Sie mehr über maßgeschneiderte Webdesign-Lösungen.">
-  <meta name="twitter:title" content="WebDesign Alcor - Handprogrammierte Webseiten vs. WordPress">
+  <meta name="twitter:description" content="Lesen Sie die Vorteile handprogrammierter Webseiten vs WordPress. Warum optimale Lösungen für Performance, Sicherheit und SEO überlegen sind.">
+  <meta name="twitter:title" content="Handprogrammierte Webseiten vs. WordPress | Alcor">
   <meta name="twitter:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-agentur.jpg">
   <meta name="twitter:site" content="@deinTwitterName">
   <meta name="twitter:creator" content="@deinTwitterName">
@@ -67,6 +67,7 @@
 
 <body>
   <?php include_once __DIR__ . '/../includes/navigation.php'; ?>
+  <?php include dirname(__FILE__) . '/../includes/social-sharing.php'; ?>
 
   <!-- Header Section -->
   <header id="blogheader">
@@ -74,9 +75,9 @@
       <div class="row align-items-center text-center text-lg-start">
         <div class="col-lg-6">
           <h1 class="blog-h1 fw-bold">Webdesign Agentur – Handprogrammierte Webseiten vs. WordPress</h1>
-          <p class="lead">Warum handprogrammierte Webseiten oft die bessere Wahl sind und wie unsere <a href="/about">Webdesign Agentur</a> Ihnen dabei helfen kann.</p>
+          <p class="lead">Warum handprogrammierte Webseiten oft die bessere Wahl sind und wie unsere <a href="/about.php">Webdesign Agentur</a> Ihnen dabei helfen kann.</p>
           <p class="blog-datum">13.08.2024</p>
-          <a href="/kontakt" class="btn-outline btn text-center mb-5 mb-lg-0">Jetzt sorglos anfragen</a>
+          <a href="/kontakt.php" class="btn-outline btn text-center mb-5 mb-lg-0">Jetzt sorglos anfragen</a>
         </div>
         <div class="col-lg-6">
           <img src="/assets/img/wordpress-vs-vscode-html5.webp" class="img-fluid blog-img rounded-3 shadow" alt="webdesign agentur - perfekte webdesign-lösungen">
@@ -189,19 +190,19 @@
         <div class="row align-items-center">
           <div class="col-lg-8 offset-lg-2 text-center">
             <h2 class="text-center mb-4">Fazit: Warum eine handprogrammierte Webseite die bessere Wahl ist</h2>
-            <p>Als erfahrene <a href="/about">Webdesign Agentur</a> wissen wir, dass eine handprogrammierte Webseite in vielen Fällen die bessere Wahl sein kann. Sie bietet maßgeschneiderte Lösungen, bessere Performance, höhere Sicherheit und optimale SEO-Möglichkeiten. Wenn Sie auf der Suche nach einer zukunftssicheren und leistungsstarken Webseite sind, könnte eine handprogrammierte Lösung genau das Richtige für Ihr Unternehmen sein.</p>
-            <a href="/kontakt" class="btn btn-primary mt-3"><i class="bi bi-envelope-fill me-2"></i> Kontaktieren Sie uns</a>
+            <p>Als erfahrene <a href="/about.php">Webdesign Agentur</a> wissen wir, dass eine handprogrammierte Webseite in vielen Fällen die bessere Wahl sein kann. Sie bietet maßgeschneiderte Lösungen, bessere Performance, höhere Sicherheit und optimale SEO-Möglichkeiten. Wenn Sie auf der Suche nach einer zukunftssicheren und leistungsstarken Webseite sind, könnte eine handprogrammierte Lösung genau das Richtige für Ihr Unternehmen sein.</p>
+            <a href="/kontakt.php" class="btn btn-primary mt-3"><i class="bi bi-envelope-fill me-2"></i> Kontaktieren Sie uns</a>
           </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <?php include __DIR__ . '/../includes/footer.php'; ?>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-  <!-- Custom JS -->
-  <script src="/assets/js/app.min.js" defer></script>
+    <?php include __DIR__ . '/../includes/footer.php'; ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/app.min.js" defer></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
   <title>Datenschutz | Webdesign und SEO in Wien und Umgebung</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/datenschutz">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/datenschutz.php">
 
   <meta name="description" content="Die Datenschutzrichtlinien von WebDesign Alcor. Ihre Privatsphäre ist uns wichtig. Informieren Sie sich über unsere Maßnahmen zum Schutz Ihrer Daten.">
   <meta name="robots" content="index, follow">
@@ -25,7 +25,7 @@
   <meta property="og:title" content="Datenschutz - WebDesign Alcor | Webdesign und SEO in Wien">
   <meta property="og:description" content="Erfahren Sie mehr über die Datenschutzrichtlinien von WebDesign Alcor. Ihre Privatsphäre ist uns wichtig. Informieren Sie sich über unsere Maßnahmen zum Schutz Ihrer Daten.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/datenschutz">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/datenschutz.php">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
@@ -75,7 +75,7 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "WebDesign Alcor",
-      "url": "https://www.webdesign-alcor.at/",
+      "url": "https://www.webdesign-alcor.at/datenschutz.php",
       "logo": "https://www.webdesign-alcor.at/assets/logo/alcor.jpg",
       "contactPoint": {
         "@type": "ContactPoint",
@@ -97,6 +97,7 @@
 
 <body>
   <?php include 'includes/navigation.php'; ?>
+  <?php include 'includes/social-sharing.php'; ?>
 
   <header class="bg-dark text-light py-5 text-center">
     <div class="container">
@@ -109,7 +110,7 @@
       <!-- Breadcrumb Navigation -->
       <?php
       include('includes/breadcrumbs.php');
-      getBreadcrumbs('datenschutz');
+      getBreadcrumbs('datenschutz.php');
       ?>
     </div>
   </section>

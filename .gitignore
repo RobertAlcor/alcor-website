@@ -52,8 +52,7 @@ _dwsync.xml
 # IDEs and Editors
 .vscode/
 .idea/
-*.sublime-workspace
-*.sublime-project
+
 
 # Temporary files
 *.tmp
@@ -82,7 +81,7 @@ fetch_reviews.py
 fiveserver.config.js
 rename_images.sh
 send_mail.php
-sitemap.xml
+
 
 includes/config-keywords.php
 

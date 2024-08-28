@@ -8,7 +8,7 @@
   <title>Webdesign Liesing - User Experience (UX) im modernen Webdesign</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/posts/ux-webdesign-liesing">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/posts/ux-webdesign-liesing.php">
   <meta name="description" content="Wie unser Webdesign in Liesing Ihnen dabei hilft eine positive User Experience (UX) für den Erfolg Ihrer Webseite zu sichern.">
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="Webdesign Liesing, Webdesigner Wien, Webdesigner Liesing, User Experience, UX Webdesign, Benutzerfreundlichkeit Webdesign, modernes Webdesign">
@@ -24,7 +24,7 @@
   <meta property="og:title" content="Webdesign Liesing - Die Bedeutung von User Experience (UX) im modernen Webdesign">
   <meta property="og:description" content="Wie unser Webdesign in Liesing Ihnen dabei hilft eine positive User Experience (UX) für den Erfolg Ihrer Webseite zu sichern.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/posts/ux-webdesign-liesing">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/posts/ux-webdesign-liesing.php">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/ux-webdesign-liesing.webp">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
@@ -67,6 +67,7 @@
 
 <body>
   <?php include_once __DIR__ . '/../includes/navigation.php'; ?>
+  <?php include dirname(__FILE__) . '/../includes/social-sharing.php'; ?>
 
   <!-- Header Section -->
   <header id="blogheader">
@@ -74,9 +75,9 @@
       <div class="row align-items-center text-center text-lg-start">
         <div class="col-lg-6">
           <h1 class="blog-h1 fw-bold">Webdesign Liesing - Die Bedeutung von User Experience (UX) im modernen Webdesign</h1>
-          <p class="lead">Warum eine positive User Experience (UX) entscheidend für den Erfolg Ihrer Webseite ist und wie unser <a href="/about">Webdesigner in Wien Liesing</a> Ihnen dabei helfen kann, eine benutzerfreundliche Webseite zu gestalten.</p>
+          <p class="lead">Warum eine positive User Experience (UX) entscheidend für den Erfolg Ihrer Webseite ist und wie unser <a href="/about.php">Webdesigner in Wien Liesing</a> Ihnen dabei helfen kann, eine benutzerfreundliche Webseite zu gestalten.</p>
           <p class="blog-datum">10.08.2024</p>
-          <a href="/kontakt" class="btn-outline btn text-center mb-5 mb-lg-0">Jetzt sorglos anfragen</a>
+          <a href="/kontakt.php" class="btn-outline btn text-center mb-5 mb-lg-0">Jetzt sorglos anfragen</a>
         </div>
         <div class="col-lg-6">
           <img src="/assets/img/ux-webdesign-liesing.webp" class="img-fluid blog-img rounded-3 shadow" alt="webdesign liesing - user experience ux">
@@ -117,7 +118,7 @@
               <i class="bi bi-graph-up-arrow icon-m"></i>
             </div>
             <h3>Steigerung der Konversionsrate</h3>
-            <p>Ein durchdachtes UX-Design trägt maßgeblich zur Steigerung der Konversionsrate bei. Wenn sich Besucher auf Ihrer Webseite wohlfühlen und schnell finden, was sie suchen, ist die Wahrscheinlichkeit höher, dass sie eine gewünschte Aktion ausführen, sei es ein Kauf, eine <a href="/kontakt">Kontaktaufnahme</a> oder eine Anmeldung.</p>
+            <p>Ein durchdachtes UX-Design trägt maßgeblich zur Steigerung der Konversionsrate bei. Wenn sich Besucher auf Ihrer Webseite wohlfühlen und schnell finden, was sie suchen, ist die Wahrscheinlichkeit höher, dass sie eine gewünschte Aktion ausführen, sei es ein Kauf, eine <a href="/kontakt.php">Kontaktaufnahme</a> oder eine Anmeldung.</p>
           </div>
           <div class="col-md-4">
             <div class="mb-4">
@@ -131,7 +132,7 @@
               <i class="bi bi-search icon-m"></i>
             </div>
             <h3>SEO-Optimierung</h3>
-            <p>Suchmaschinen wie Google bewerten die User Experience als wichtigen Ranking-Faktor. Eine benutzerfreundliche Webseite mit schneller Ladezeit und hoher Relevanz wird in den Suchergebnissen höher eingestuft, was Ihre <a href="/services">Sichtbarkeit</a> erhöht.</p>
+            <p>Suchmaschinen wie Google bewerten die User Experience als wichtigen Ranking-Faktor. Eine benutzerfreundliche Webseite mit schneller Ladezeit und hoher Relevanz wird in den Suchergebnissen höher eingestuft, was Ihre <a href="/services.php">Sichtbarkeit</a> erhöht.</p>
           </div>
         </div>
       </div>
@@ -167,7 +168,7 @@
         <div class="row align-items-center">
           <div class="col-lg-8 offset-lg-2 text-center">
             <h2 class="mb-4">Wie unser Webdesigner in Wien Liesing Ihnen helfen kann</h2>
-            <p>Unser <a href="/about">Webdesign Standort in Wien Liesing</a> ist spezialisiert auf die Erstellung von benutzerfreundlichen Webseiten, die nicht nur gut aussehen, sondern auch optimal funktionieren. Durch den Einsatz modernster UX-Prinzipien und -Technologien sorgen wir dafür, dass Ihre Webseite Ihre Besucher begeistert und Ihr Geschäftserfolg steigt.</p>
+            <p>Unser <a href="/about.php">Webdesign Standort in Wien Liesing</a> ist spezialisiert auf die Erstellung von benutzerfreundlichen Webseiten, die nicht nur gut aussehen, sondern auch optimal funktionieren. Durch den Einsatz modernster UX-Prinzipien und -Technologien sorgen wir dafür, dass Ihre Webseite Ihre Besucher begeistert und Ihr Geschäftserfolg steigt.</p>
           </div>
         </div>
         <div class="row mt-5 align-items-center text-center text-lg-start">
@@ -190,8 +191,8 @@
         <div class="row align-items-center">
           <div class="col-lg-8 offset-lg-2 text-center">
             <h2 class="text-center mb-4">Fazit: User Experience als Schlüssel zum Erfolg</h2>
-            <p>Die Bedeutung von User Experience im Webdesign kann nicht genug betont werden. Eine positive UX verbessert die Kundenzufriedenheit, steigert die Konversionsrate und trägt wesentlich zum Erfolg Ihrer Webseite bei. Unser <a href="/about">Webdesign Standort in Wien Liesing</a> unterstützt Sie dabei, eine Webseite zu erstellen, die sowohl Ihre Besucher als auch Suchmaschinen begeistert.</p>
-            <a href="/kontakt" class="btn btn-primary mt-3"><i class="bi bi-envelope-fill me-2"></i> Kontaktieren Sie uns</a>
+            <p>Die Bedeutung von User Experience im Webdesign kann nicht genug betont werden. Eine positive UX verbessert die Kundenzufriedenheit, steigert die Konversionsrate und trägt wesentlich zum Erfolg Ihrer Webseite bei. Unser <a href="/about.php">Webdesign Standort in Wien Liesing</a> unterstützt Sie dabei, eine Webseite zu erstellen, die sowohl Ihre Besucher als auch Suchmaschinen begeistert.</p>
+            <a href="/kontakt.php" class="btn btn-primary mt-3"><i class="bi bi-envelope-fill me-2"></i> Kontaktieren Sie uns</a>
           </div>
         </div>
       </div>

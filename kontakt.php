@@ -14,7 +14,7 @@ $_SESSION['token'] = $token;
   <title>Kontakt | Professionelles Webdesign und SEO in Wien | Alcor</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/kontakt">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/kontakt.php">
 
   <meta name="description" content="Kontaktieren Sie WebDesign Alcor für maßgeschneiderte Webdesign und SEO in Wien. Beratung und Lösungen für Ihre Homepage.">
   <meta name="robots" content="index, follow">
@@ -31,7 +31,7 @@ $_SESSION['token'] = $token;
   <meta property="og:title" content="Kontaktieren Sie WebDesign Alcor - Webdesign und SEO in Wien">
   <meta property="og:description" content="Kontaktieren Sie WebDesign Alcor für maßgeschneiderte Webdesign- und SEO-Dienstleistungen. Lassen Sie uns Ihre Website optimieren und zum Erfolg führen.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/kontakt">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/kontakt.php">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
@@ -81,9 +81,9 @@ $_SESSION['token'] = $token;
       "@context": "https://schema.org",
       "@type": "ContactPage",
       "mainEntity": {
-        "@type": "Organization",
+        "@type": "ProfessionalService",
         "name": "WebDesign Alcor",
-        "url": "https://www.webdesign-alcor.at/",
+        "url": "https://www.webdesign-alcor.at/kontakt.php",
         "logo": "https://www.webdesign-alcor.at/assets/logo/alcor.jpg",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -125,13 +125,14 @@ $_SESSION['token'] = $token;
 
 <body>
   <?php include 'includes/navigation.php'; ?>
+  <?php include 'includes/social-sharing.php'; ?>
 
   <section class="sec-small d-none">
     <div class="container">
       <!-- Breadcrumb Navigation -->
       <?php
       include('includes/breadcrumbs.php');
-      getBreadcrumbs('kontakt');
+      getBreadcrumbs('kontakt.php');
       ?>
     </div>
   </section>
@@ -173,7 +174,7 @@ $_SESSION['token'] = $token;
                 </div>
                 <div class="dsgvo mb-3">
                   <input class="form-check-input me-2" name="agreement" type="checkbox" id="inlineCheckbox" value="Datenschutz" required>
-                  <span class="text-danger">*</span> Ich habe die <a href="datenschutz">Datenschutzbestimmungen</a> zur Kenntnis genommen.
+                  <span class="text-danger">*</span> Ich habe die <a href="/datenschutz.php">Datenschutzbestimmungen</a> zur Kenntnis genommen.
                 </div>
                 <div class="col-12 text-center text-lg-start">
                   <button class="btn btn-primary fs-5" id="btn-submit" type="submit" aria-label="Formular absenden"><i class="bi bi-send"></i> SENDEN</button>
@@ -184,7 +185,7 @@ $_SESSION['token'] = $token;
           <div class="col-md-6 mt-5 mt-lg-0 text-center text-lg-start">
             <h2 class="fs-2 fw-bold text-accent">Kontaktieren Sie Ihre Webdesign Agentur in Wien</h2>
             <p>
-              Sie suchen eine verlässliche <strong>Webdesign Agentur in Wien</strong>, die Ihren Anforderungen gerecht wird? <a href="index">Bei uns</a>, Ihrer vertrauenswürdigen Webagentur in Wien, sind Sie genau richtig!
+              Sie suchen eine verlässliche <strong>Webdesign Agentur in Wien</strong>, die Ihren Anforderungen gerecht wird? <a href="/index.php">Bei uns</a>, Ihrer vertrauenswürdigen Webagentur in Wien, sind Sie genau richtig!
             </p>
             <img src="./assets/logo/alcorlogoweiss.svg" alt="Webdesign Alcor Logo" class="img-fluid w-50 my-4 mb-5" id="header-logo" title="webdesign in Wien" width="600" height="400">
             <h3 class="fs-5 text-primary d-none d-lg-block">Wir sind für Sie da!</h3>
@@ -197,6 +198,49 @@ $_SESSION['token'] = $token;
               <b>E-Mail</b>: office@webdesign-alcor.at <br>
               <b>Mobil</b>: +43 664 99 124 999
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="text-center mb-5">Kontaktieren Sie uns für Hochwertiges Webdesign</h2>
+            <div class="row">
+              <!-- Erste Spalte -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <h2>Uns kontaktieren</h2>
+                <p>Uns kontaktieren hochwertiges Webdesign in Wien, Niederösterreich, Burgenland, Linz, Graz, Tirol, Salzburg und Klagenfurt. Herzlich willkommen auf unserer Kontaktseite! Wir sind Ihr zuverlässiger Ansprechpartner, wenn es um professionelles Webdesign in Wien und darüber hinaus geht.</p>
+                <p>Als design-orientiertes Unternehmen zielen wir darauf ab, Ihnen online mitzuhelfen, Erfolg zu haben, indem wir eine ansprechende und gleichzeitig funktionale und benutzerfreundliche Webseite bereitstellen.</p>
+                <p>Unser Unternehmen steht in Wien, Niederösterreich, Burgenland, Linz, Graz, Tirol, Salzburg und Klagenfurt zur Verfügung.</p>
+                <p class="d-none d-md-block">Warum uns kontaktieren? Wir alle wissen, wie wichtig heute eine erfolgreiche Online-Präsenz ist. In den meisten Fällen ist Ihre Webseite der erste Eindruck, den Ihre Produkte oder Dienstleistungen bei potenziellen Kunden hinterlassen.</p>
+              </div>
+              <!-- Zweite Spalte -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <h2>Individuelles Webdesign</h2>
+                <p>Deshalb hat unser Webdesign- und Entwicklungsunternehmen ein Team erfahrener Designer, die wissen, wie sie ansprechende Webseiten entwerfen können, die außerdem suchmaschinenoptimiert sind.</p>
+                <p>Unser Service umfasst: Über das individuelle Webdesign: Websites müssen funktionieren, umfassend konzipiert und individuell gestaltet sein, um die Anforderungen Ihres Unternehmens zu erfüllen.</p>
+                <p>Designerfahrunglegung. Beantwortet durch die Sichtbarkeit: Unabhängig davon, ob ein Kunde Ihr Unternehmen sucht oder nach Handelswerbung sucht, bietet es die Qualität, die es benötigt.</p>
+                <p class="d-none d-md-block">User-Finisher: Unsere gesamte Arbeit wird in Geschäfts- und Geschäftsprozessen geregelt.</p>
+              </div>
+              <!-- Dritte Spalte -->
+              <div class="col-lg-4 col-md-12 mb-4">
+                <h2>Webdesign in Wien und Umgebung</h2>
+                <p>Webdesign Wien Umgebung: Wenn Sie ein Unternehmen in Wien haben, wissen Sie, dass potenzielle Kunden in der Landeshauptstadt Österreichs sind. Streamer. Unsere Website-Designertypen gestalten die moderne Welt nach Ihren Wünschen.</p>
+                <p>Webdesign für Niederösterreich und Burgenland. Unternehmen, die in Niederösterreich und Burgenland an den Start gehen, haben viele Möglichkeiten.</p>
+                <p>Unser Team von Webdesign-Profis kann Ihnen dabei helfen, Ihre Webseite erstellen zu lassen, die der Kultur und dem Flair dieser Regionen entspricht.</p>
+                <p class="d-none d-md-block">Egal, ob Sie einen lokalen Markt bedienen oder bundesweite oder internationale Kundschaft ansprechen – wir sorgen dafür, dass Ihre Webseite professionell und ansprechend gestaltet ist.</p>
+                <p>Webdesign-Linz und Graz. Linz und Graz sind beide bedeutende Wirtschaftszentren, daher ist eine starke Webpräsenz unerlässlich. Unser erfahrenes Team hat viele Arbeiter und Kunden in Linz und Graz erfolgreich unterstützt.</p>
+                <p class="d-none d-md-block">Wir verfügen über jahrelange Erfahrung darin, Unternehmen auf diesen anspruchsvollen Märkten zu helfen und erstellen Webseiten, die attraktiv und zugleich funktional sind.</p>
+                <p>Webdesign-Klagenfurt. Klagenfurt ist die Hauptstadt des Bundeslandes Kärnten und ein geschäftiges Zentrum.</p>
+                <p>Viele Unternehmen wenden sich für innovatives Webdesign an uns und bleiben dank unserer Lösungen auf dem neuesten Stand der Technik.</p>
+                <p>Unsere erfahrenen Mitarbeiter helfen Ihrem Unternehmen dabei, sich online erfolgreich zu positionieren und Ihre Kunden leichter zu erreichen.</p>
+                <p class="d-none d-md-block">Zögern Sie nicht uns zu kontaktieren.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

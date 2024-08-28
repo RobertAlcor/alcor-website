@@ -8,7 +8,7 @@
   <title>Webdesign Agentur - Local SEO: Optimierung für lokale Suchanfragen</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/posts/local-seo-optimierung">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/posts/local-seo-optimierung.php">
   <meta name="description" content="Wie Sie von unserer Webdesign Agentur, wie Sie Ihre Webseite für lokale Suchanfragen optimieren und mehr Kunden vor Ort gewinnen können.">
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="Webdesign Agentur, Local SEO, lokale Suchanfragen, Google My Business, lokale Keywords, SEO Optimierung, regionale Suchmaschinenoptimierung">
@@ -24,7 +24,7 @@
   <meta property="og:title" content="WebDesign Alcor - Local SEO: Optimierung für lokale Suchanfragen">
   <meta property="og:description" content="Unsere Webdesign Agentur zeigt Ihnen, wie Sie Ihre Webseite für lokale Suchanfragen optimieren können, um Ihre Reichweite in Ihrer Region zu erhöhen.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/posts/local-seo-optimierung">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/posts/local-seo-optimierung.php">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
@@ -67,6 +67,7 @@
 
 <body>
   <?php include_once __DIR__ . '/../includes/navigation.php'; ?>
+  <?php include dirname(__FILE__) . '/../includes/social-sharing.php'; ?>
 
   <!-- Header Section -->
   <header id="blogheader">
@@ -74,9 +75,9 @@
       <div class="row align-items-center">
         <div class="col-lg-6 text-center text-lg-start">
           <h1 class="blog-h1 fw-bold">Webdesign Agentur – Local SEO: Optimierung für lokale Suchanfragen</h1>
-          <p class="lead">Wie unsere <a href="/about">Webdesign Agentur</a> Ihre Webseite für lokale Suchanfragen optimieren kann, um Ihre regionale Reichweite zu maximieren.</p>
+          <p class="lead">Wie unsere <a href="/about.php">Webdesign Agentur</a> Ihre Webseite für lokale Suchanfragen optimieren kann, um Ihre regionale Reichweite zu maximieren.</p>
           <p class="blog-datum">18.08.2024</p>
-          <a href="/kontakt" class="btn-outline btn text-center mb-5 mb-lg-0">Jetzt sorglos anfragen</a>
+          <a href="/kontakt.php" class="btn-outline btn text-center mb-5 mb-lg-0">Jetzt sorglos anfragen</a>
         </div>
         <div class="col-lg-6">
           <img src="/assets/img/local-seo.webp" class="img-fluid blog-img rounded-3 shadow" alt="local seo optimierung für webdesign">
@@ -189,8 +190,8 @@
         <div class="row align-items-center">
           <div class="col-lg-8 offset-lg-2 text-center">
             <h2 class="text-center mb-4">Fazit: Erfolgreiche lokale SEO für Ihr Unternehmen</h2>
-            <p>Local SEO ist ein mächtiges Werkzeug, um die Sichtbarkeit Ihres Unternehmens in Ihrer Region zu erhöhen. Durch die Optimierung Ihrer Webseite und Google My Business-Seite sowie die gezielte Nutzung lokaler Keywords können Sie sicherstellen, dass Ihr Unternehmen in den lokalen Suchergebnissen gut sichtbar ist. Unsere <a href="/about">Webdesign Agentur</a> unterstützt Sie gerne dabei, Ihre lokale SEO-Strategie zu entwickeln und umzusetzen.</p>
-            <a href="/kontakt" class="btn btn-primary mt-3"><i class="bi bi-envelope-fill me-2"></i> Kontaktieren Sie uns</a>
+            <p>Local SEO ist ein mächtiges Werkzeug, um die Sichtbarkeit Ihres Unternehmens in Ihrer Region zu erhöhen. Durch die Optimierung Ihrer Webseite und Google My Business-Seite sowie die gezielte Nutzung lokaler Keywords können Sie sicherstellen, dass Ihr Unternehmen in den lokalen Suchergebnissen gut sichtbar ist. Unsere <a href="/about.php">Webdesign Agentur</a> unterstützt Sie gerne dabei, Ihre lokale SEO-Strategie zu entwickeln und umzusetzen.</p>
+            <a href="/kontakt.php" class="btn btn-primary mt-3"><i class="bi bi-envelope-fill me-2"></i> Kontaktieren Sie uns</a>
           </div>
         </div>
       </div>

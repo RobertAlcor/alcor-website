@@ -8,7 +8,7 @@
   <title>Webdesign Wien - Technisch perfekte handprogrammierte Webseiten</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/posts/technisch-perfekte-webseiten-vscode">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/posts/technisch-perfekte-webseiten-vscode.php">
   <meta name="description" content="Erfahren Sie, wie Sie mit Visual Studio Code, HTML5, CSS3, JavaScript, PHP und Python eine technisch perfekte, handprogrammierte Webseite erstellen können.">
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="Webdesign Liesing, Webdesigner Wien, Webdesigner Liesing, handprogrammierte Webseiten, Visual Studio Code, HTML5, CSS3, JavaScript, PHP, Python, technische Perfektion Webdesign">
@@ -24,7 +24,7 @@
   <meta property="og:title" content="Webdesign Liesing - Technisch perfekte handprogrammierte Webseiten">
   <meta property="og:description" content="Erfahren Sie, wie Sie mit Visual Studio Code, HTML5, CSS3, JavaScript, PHP und Python eine technisch perfekte, handprogrammierte Webseite erstellen können.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/posts/technisch-perfekte-webseiten-vscode">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/posts/technisch-perfekte-webseiten-vscode.php">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-agentur.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
@@ -67,16 +67,17 @@
 
 <body>
   <?php include_once __DIR__ . '/../includes/navigation.php'; ?>
+  <?php include dirname(__FILE__) . '/../includes/social-sharing.php'; ?>
 
   <!-- Header Section -->
   <header id="blogheader">
     <div class="container py-5">
       <div class="row align-items-center">
         <div class="col-lg-6">
-          <h1 class="blog-h1 fw-bold">Webdesign Wien - Technisch perfekte handprogrammierte Webseiten</h1>
+          <h1 class="blog-h1 fw-bold">Handprogrammiertes technisch perfektes Webdesign in Wien</h1>
           <p class="lead">Erfahren Sie, wie Sie mit Visual Studio Code, HTML5, CSS3, JavaScript, PHP und Python eine technisch perfekte, handprogrammierte Webseite erstellen können. Unser Webdesigner in Wien Liesing unterstützt Sie dabei.</p>
           <p class="blog-datum">14.08.2024</p>
-          <a href="/kontakt" class="btn-outline btn text-center">Jetzt sorglos anfragen</a>
+          <a href="/kontakt.php" class="btn-outline btn text-center">Jetzt sorglos anfragen</a>
         </div>
         <div class="col-lg-6">
           <img src="/assets/img/technisch-perfekte-webseiten-vscode.webp" class="img-fluid blog-img rounded-3 shadow" alt="handprogrammierte webseite visual studio code">
@@ -190,7 +191,7 @@
           <div class="col-lg-8 offset-lg-2 text-center">
             <h2 class="text-center mb-4">Fazit: Die Vorteile einer handprogrammierten Webseite</h2>
             <p>Eine handprogrammierte Webseite bietet maximale Kontrolle, Flexibilität und technische Perfektion. Mit den richtigen Werkzeugen und Methoden können Sie eine Webseite erstellen, die nicht nur optisch ansprechend, sondern auch zukunftssicher ist. Unsere Webdesign Agentur in Wien Liesing steht Ihnen dabei zur Seite, Ihre Vision in die Realität umzusetzen.</p>
-            <a href="/kontakt" class="btn btn-primary mt-3"><i class="bi bi-envelope-fill me-2"></i> Kontaktieren Sie uns</a>
+            <a href="/kontakt.php" class="btn btn-primary mt-3"><i class="bi bi-envelope-fill me-2"></i> Kontaktieren Sie uns</a>
           </div>
         </div>
       </div>

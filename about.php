@@ -1,3 +1,8 @@
+<?php
+include dirname(__FILE__) . '/includes/blog-preview.php';
+$latest_posts = getLatestBlogPosts(4);
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -5,14 +10,14 @@
   <?php include 'includes/cookie-banner.php'; ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Über uns | Webdesign und SEO in Wien | Alcor</title>
+  <title>Über uns | Webdesign und SEO in Wien und Umgebung | Alcor</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/about">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/about.php">
 
-  <meta name="description" content="WebDesign Alcor bietet professionelles Webdesign und SEO in Wien. Ihre Webdesign-Agentur für maßgeschneiderte Webseiten. Kontaktieren Sie uns jetzt.">
+  <meta name="description" content="Alcor bietet maßgeschneidertes Webdesign und SEO in Wien und Umgebung. Vertrauen Sie auf unsere Expertise für Ihre erfolgreiche Online-Präsenz.">
   <meta name="robots" content="index, follow">
-  <meta name="keywords" content="Webdesign Wien, Webdesigner Wien, Webdesign Agentur Wien, Webdesign Firmen Wien, Webentwicklung Wien, SEO Wien, Webdesign Alcor, Responsive Webdesign Wien, E-Commerce Webdesign Wien, SEO Beratung Wien, Webdesign Niederösterreich, Webdesign Burgenland, Webdesign Steiermark, Webdesign Salzburg, Webdesign Kärnten, Webdesign Oberösterreich, Webdesign Tirol, Webdesign Vorarlberg">
+  <meta name="keywords" content="Webdesign Wien, Webdesigner Wien, Webdesign Agentur Wien, Webentwicklung Wien, SEO Wien, Responsive Webdesign Wien, E-Commerce Webdesign, SEO Beratung Wien, Webdesign Niederösterreich, Webdesign Burgenland, Webdesign Steiermark, Webdesign Salzburg, Webdesign Kärnten, Webdesign Oberösterreich, Webdesign Tirol, Webdesign Vorarlberg">
   <meta name="author" content="WebDesign Alcor">
   <meta name="page-topic" content="Business">
   <meta name="page-type" content="Webdesign Services">
@@ -22,18 +27,18 @@
   <meta name="revisit-after" content="7 days">
 
   <!-- Open Graph / Facebook Meta-Tags -->
-  <meta property="og:title" content="WebDesign Alcor - Professionelles Webdesign und SEO in Wien und Umgebung">
-  <meta property="og:description" content="Alcor bietet professionelles Webdesign und SEO in Wien. Kontaktieren Sie uns jetzt für Webseiten und effektive Suchmaschinenoptimierung.">
+  <meta property="og:title" content="Über uns - WebDesign Alcor - Professionelles Webdesign und SEO in Wien und Umgebung">
+  <meta property="og:description" content="Alcor bietet professionelles Webdesign und SEO in Wien. Kontaktieren Sie uns jetzt für maßgeschneiderte Webseiten und effektive Suchmaschinenoptimierung.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/about">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/about.php">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
 
   <!-- Twitter Card Daten -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:description" content="Alcor bietet professionelles Webdesign und SEO in Wien. Kontaktieren Sie uns jetzt für Webseiten und effektive Suchmaschinenoptimierung.">
-  <meta name="twitter:title" content="WebDesign Alcor - Professionelles Webdesign und SEO in Wien und Umgebung">
+  <meta name="twitter:description" content="Alcor bietet professionelles Webdesign und SEO in Wien. Kontaktieren Sie uns jetzt für maßgeschneiderte Webseiten und effektive Suchmaschinenoptimierung.">
+  <meta name="twitter:title" content="Über uns - WebDesign Alcor - Professionelles Webdesign und SEO in Wien und Umgebung">
   <meta name="twitter:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta name="twitter:site" content="@deinTwitterName">
   <meta name="twitter:creator" content="@deinTwitterName">
@@ -75,7 +80,7 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "WebDesign-Alcor",
-      "url": "https://www.webdesign-alcor.at/about",
+      "url": "https://www.webdesign-alcor.at/about.php",
       "logo": "https://www.webdesign-alcor.at/assets/logo/alcor.jpg",
       "image": [
         "https://www.webdesign-alcor.at/assets/img/ogwebdesign.jpg",
@@ -116,36 +121,38 @@
 
 <body>
   <?php include 'includes/navigation.php'; ?>
+  <?php include 'includes/social-sharing.php'; ?>
 
   <!-- Hero Section -->
   <header id="about-header" aria-label="Über uns Header">
     <div class="about-header-content">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-8 text-center">
+          <div class="col-lg-12 text-center">
             <h1 class="display-5"><strong>Über WebDesign Alcor</strong></h1>
-            <p class="lead"><strong>Ihr Partner für Webdesign und SEO in Wien und ganz Österreich</strong></p>
+            <p class="lead"><strong>Ihr Partner für <a href="/index.php">Webdesign</a> und <a href="/posts/local-seo-optimierung.php">SEO</a> in Wien und ganz Österreich</strong></p>
           </div>
         </div>
       </div>
     </div>
   </header>
 
+
   <section id="marquee" class="p-0">
     <div class="marquee-container text-uppercase shadow">
       <div class="marquee-content" aria-label="Marquee">
-        <h2 class="p">WebDesign</h2>
-        <h2 class="p">WebDevelopment</h2>
-        <h2 class="p">Bildbearbeitung</h2>
-        <h2 class="p">Fotografie</h2>
-        <h2 class="p">Künstliche Intelligenz</h2>
-        <h2 class="p">Python</h2>
-        <h2 class="p">SEO</h2>
-        <h2 class="p">Responsive Design</h2>
-        <h2 class="p">Branding</h2>
-        <h2 class="p">Visitenkarten</h2>
-        <h2 class="p">Briefpapier</h2>
-        <h2 class="p">Logo Erstellung</h2>
+        <span class="p me-3 fs-6 fs-md-5">WebDesign</span>
+        <span class="p me-3 fs-6 fs-md-5">WebDevelopment</span>
+        <span class="p me-3 fs-6 fs-md-5">Bildbearbeitung</span>
+        <span class="p me-3 fs-6 fs-md-5">Fotografie</span>
+        <span class="p me-3 fs-6 fs-md-5">Künstliche Intelligenz</span>
+        <span class="p me-3 fs-6 fs-md-5">Python</span>
+        <span class="p me-3 fs-6 fs-md-5">SEO</span>
+        <span class="p me-3 fs-6 fs-md-5">Responsive Design</span>
+        <span class="p me-3 fs-6 fs-md-5">Branding</span>
+        <span class="p me-3 fs-6 fs-md-5">Visitenkarten</span>
+        <span class="p me-3 fs-6 fs-md-5">Briefpapier</span>
+        <span class="p me-3 fs-6 fs-md-5">Logo Erstellung</span>
       </div>
     </div>
   </section>
@@ -155,7 +162,7 @@
       <!-- Breadcrumb Navigation -->
       <?php
       include('includes/breadcrumbs.php');
-      getBreadcrumbs('about');
+      getBreadcrumbs('about.php');
       ?>
     </div>
   </section>
@@ -167,7 +174,7 @@
           <div class="col-md-8 text-center">
             <h2 class="fw-bold mb-4 text-accent"><strong>Unser engagiertes Team</strong></h2>
             <p class="mb-3">
-              Unser Team besteht aus erfahrenen Webdesignern und Entwicklern in Wien. Unsere Mitarbeiter arbeiten mit Leidenschaft und machen auch gerne Überstunden, um die vollste Kundenzufriedenheit zu erreichen. Bei uns ist der Kunde immer König!
+              Unser Team besteht aus erfahrenen Webdesignern und Entwicklern in Wien. Unsere Mitarbeiter arbeiten mit Leidenschaft und Engagement, um höchste Kundenzufriedenheit zu gewährleisten. Bei uns steht der Kunde stets im Mittelpunkt.
             </p>
           </div>
         </div>
@@ -176,11 +183,11 @@
           <!-- Teammitglied 1 -->
           <div class="col-md-3">
             <div class="team-member text-center">
-              <img src="/assets/img/member4.webp" alt="Monika Alchimowicz - Grafik & Webdesignerin" class="img-fluid" width="400" height="400">
+              <img src="/assets/img/member4.webp" alt="Monika Alchimowicz - Grafik & Webdesignerin" class="img-fluid lazy" width="400" height="400" data-src="/assets/img/member4.webp">
               <div class="info mt-3">
                 <h4>Monika Alchimowicz</h4>
                 <p class="fw-bold">Grafik & Webdesignerin</p>
-                <p>Leidenschaftlich im Erstellen von Grafiken, die inspirieren und ansprechen.</p>
+                <p>Erstellt inspirierende und ansprechende Grafiken mit Leidenschaft.</p>
                 <ul class="social-links list-inline">
                   <li class="list-inline-item"><a href="https://www.webdesign-alcor.at" aria-label="Website"><i class="bi bi-web"></i></a></li>
                   <li class="list-inline-item"><a href="tel:+4366499124999" aria-label="Telefon"><i class="bi bi-telephone"></i></a></li>
@@ -192,11 +199,11 @@
           <!-- Teammitglied 2 -->
           <div class="col-md-3">
             <div class="team-member text-center">
-              <img src="/assets/img/member2.webp" alt="Sebastian Schmidt - SEO-Manager" class="img-fluid" width="400" height="400">
+              <img src="/assets/img/member2.webp" alt="Sebastian Schmidt - SEO-Manager" class="img-fluid lazy" width="400" height="400" data-src="/assets/img/member2.webp">
               <div class="info mt-3">
                 <h4>Sebastian Schmidt</h4>
                 <p class="fw-bold">SEO-Manager</p>
-                <p>Experte in der SEO mit Google Hintergrund.</p>
+                <p>Experte für SEO mit umfassendem Google-Hintergrund.</p>
                 <ul class="social-links list-inline">
                   <li class="list-inline-item"><a href="https://www.webdesign-alcor.at" aria-label="Website"><i class="bi bi-web"></i></a></li>
                   <li class="list-inline-item"><a href="tel:+4366499124999" aria-label="Telefon"><i class="bi bi-telephone"></i></a></li>
@@ -208,11 +215,11 @@
           <!-- Teammitglied 3 -->
           <div class="col-md-3">
             <div class="team-member text-center">
-              <img src="/assets/img/member3.webp" alt="Magdalena Novak - Support-Außendienst" class="img-fluid" width="400" height="400">
+              <img src="/assets/img/member3.webp" alt="Magdalena Novak - Support-Außendienst" class="img-fluid lazy" width="400" height="400" data-src="/assets/img/member3.webp">
               <div class="info mt-3">
                 <h4>Magdalena Novak</h4>
                 <p class="fw-bold">Support-Außendienst</p>
-                <p>Spezialisiert auf alle Anfragen im Bereich Webdesign und Kundenwünsche.</p>
+                <p>Spezialisiert auf Webdesign-Anfragen und Kundenwünsche.</p>
                 <ul class="social-links list-inline">
                   <li class="list-inline-item"><a href="https://www.webdesign-alcor.at" aria-label="Website"><i class="bi bi-web"></i></a></li>
                   <li class="list-inline-item"><a href="tel:+4366499124999" aria-label="Telefon"><i class="bi bi-telephone"></i></a></li>
@@ -224,11 +231,11 @@
           <!-- Teammitglied 4 -->
           <div class="col-md-3">
             <div class="team-member text-center">
-              <img src="/assets/img/member1.webp" alt="Robert Alchimowicz - Inhaber & Webdesigner" class="img-fluid" width="400" height="400">
+              <img src="/assets/img/member1.webp" alt="Robert Alchimowicz - Inhaber & Webdesigner" class="img-fluid lazy" width="400" height="400" data-src="/assets/img/member1.webp">
               <div class="info mt-3">
                 <h4>Robert Alchimowicz</h4>
                 <p class="fw-bold">Inhaber & Webdesigner</p>
-                <p>Leitet das Team mit einer Vision für Weblösungen und Design.</p>
+                <p>Führt das Team mit einer klaren Vision für Weblösungen und Design.</p>
                 <ul class="social-links list-inline">
                   <li class="list-inline-item"><a href="https://www.webdesign-alcor.at" aria-label="Website"><i class="bi bi-web"></i></a></li>
                   <li class="list-inline-item"><a href="tel:+4366499124999" aria-label="Telefon"><i class="bi bi-telephone"></i></a></li>
@@ -241,11 +248,11 @@
         <div class="row align-items-center justify-content-center mt-5">
           <div class="col-lg-9 text-center">
             <p class="mb-3">
-              Mit <strong>über 20 Jahren Erfahrung</strong> und mehr als <strong>500 erfolgreichen Projekten</strong> sind wir Ihr vertrauensvoller Partner für <a href="/services" class="text-decoration-underline">professionelles Webdesign</a> in Wien.
-              Unser Team setzt sich aus Spezialisten in den Bereichen <a href="/posts/technisch-perfekte-webseiten-vscode.php" class="text-decoration-underline">Webentwicklung</a>, Grafikdesign und <strong>SEO</strong> zusammen. Jeder von uns bringt seine individuellen Stärken ein, um Projekte erfolgreich umzusetzen und Ihren Anforderungen gerecht zu werden.
+              Mit <strong>über 20 Jahren Erfahrung</strong> und mehr als <strong>500 erfolgreichen Projekten</strong> sind wir Ihr vertrauensvoller Partner für <a href="/services.php" class="text-decoration-underline">professionelles Webdesign</a> in Wien.
+              Unser Team besteht aus Spezialisten in den Bereichen <a href="/posts/technisch-perfekte-webseiten-vscode.php" class="text-decoration-underline">Webentwicklung</a>, Grafikdesign und <strong>SEO</strong>. Jeder bringt seine individuellen Stärken ein, um Projekte erfolgreich umzusetzen und Ihre Anforderungen zu erfüllen.
             </p>
             <p class="mb-0 lead">
-              Lernen Sie uns kennen und erfahren Sie, wie wir gemeinsam Ihre Vision verwirklichen können. <br>Kontaktieren Sie uns für eine <a href="/kontakt" class="text-decoration-underline">unverbindliche Beratung</a>.
+              Lernen Sie uns kennen und erfahren Sie, wie wir gemeinsam Ihre Vision verwirklichen können. <br>Kontaktieren Sie uns für eine <a href="/kontakt.php" class="text-decoration-underline">unverbindliche Beratung</a>.
             </p>
           </div>
         </div>
@@ -258,7 +265,7 @@
           <div class="col-md-8 text-center">
             <h2 class="fw-bold">Unsere Werte</h2>
             <p>
-              Unsere Werte sind die Grundlage für unsere Arbeit und bilden das Fundament für langfristige Beziehungen zu unseren Kunden. Wir sind stolz darauf, dass wir uns durch unsere Werte auszeichnen und sie in jedem Projekt umsetzen.
+              Unsere Werte bilden die Grundlage unserer Arbeit und sind entscheidend für den Aufbau langfristiger Beziehungen zu unseren Kunden. Wir setzen sie in jedem Projekt um und sind stolz darauf, dass sie uns auszeichnen.
             </p>
           </div>
         </div>
@@ -269,7 +276,7 @@
                 <i class="bi bi-emoji-smile icon-m"></i>
               </div>
               <h3 class="fw-bold h5">Kundenzufriedenheit</h3>
-              <p>Ihre Zufriedenheit ist unser oberstes Ziel. Wir nehmen uns die Zeit, Ihre Bedürfnisse zu verstehen und bieten Lösungen, die Ihre Erwartungen übertreffen. Unsere <a href="/services" class="text-decoration-underline">Webdesign Services</a> sind darauf ausgerichtet, Ihnen den bestmöglichen Nutzen zu bieten.</p>
+              <p>Ihre Zufriedenheit steht bei uns an erster Stelle. Wir bieten Lösungen, die Ihre Erwartungen übertreffen. Unsere <a href="/services.php" class="text-decoration-underline">Webdesign Services</a> sind darauf ausgerichtet, Ihnen den größtmöglichen Nutzen zu bieten.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4">
@@ -278,7 +285,7 @@
                 <i class="bi bi-award icon-m"></i>
               </div>
               <h3 class="fw-bold h5">Qualität</h3>
-              <p>Wir setzen in jeder Phase höchste Qualitätsstandards und streben kontinuierlich nach Perfektion. Unsere Projekte sind darauf ausgerichtet, langlebige und hochwertige <a href="/services" class="text-decoration-underline">Webseiten</a> zu erstellen.</p>
+              <p>Wir setzen in jeder Phase höchste Qualitätsstandards. Unsere Projekte sind darauf ausgelegt, langlebige und hochwertige <a href="/services.php" class="text-decoration-underline">Webseiten</a> zu erstellen.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4">
@@ -287,7 +294,7 @@
                 <i class="bi bi-lightbulb icon-m"></i>
               </div>
               <h3 class="fw-bold h5">Innovation</h3>
-              <p>Kreativität und technische Innovation sind der Motor unseres Erfolgs. Wir fördern eine Kultur des Lernens und der kontinuierlichen Weiterentwicklung. Erfahren Sie mehr über unsere innovativen <a href="/services" class="text-decoration-underline">Webentwicklungsprojekte</a>.</p>
+              <p>Kreativität und technische Innovation sind der Schlüssel zu unserem Erfolg. Erfahren Sie mehr über unsere innovativen <a href="/services.php" class="text-decoration-underline">Webentwicklungsprojekte</a>.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4">
@@ -296,7 +303,7 @@
                 <i class="bi bi-shield-check icon-m"></i>
               </div>
               <h3 class="fw-bold h5">Integrität</h3>
-              <p>Transparenz, Ethik und Respekt sind die Grundlagen für Vertrauen und langanhaltende Beziehungen zu unseren Kunden. Unsere <a href="/about.php" class="text-decoration-underline">Unternehmenswerte</a> spiegeln diese Prinzipien wider.</p>
+              <p>Transparenz und Ethik sind die Grundlagen für Vertrauen. Unsere Unternehmenswerte spiegeln diese Prinzipien wider.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4">
@@ -305,7 +312,7 @@
                 <i class="bi bi-person-circle icon-m"></i>
               </div>
               <h3 class="fw-bold h5">Individualität</h3>
-              <p>Jedes Projekt ist einzigartig und verdient maßgeschneiderte Lösungen, die genau auf die individuellen Anforderungen und Ziele unserer Kunden zugeschnitten sind. Unsere <a href="/services" class="text-decoration-underline">maßgeschneiderten Webdesign-Lösungen</a> garantieren Ihren Erfolg.</p>
+              <p>Jedes Projekt ist einzigartig und verdient maßgeschneiderte Lösungen. Unsere <a href="/services.php" class="text-decoration-underline">Webdesign-Lösungen</a> sind genau auf Ihre Bedürfnisse zugeschnitten.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4">
@@ -314,17 +321,42 @@
                 <i class="bi bi-globe icon-m"></i>
               </div>
               <h3 class="fw-bold h5">Verantwortung</h3>
-              <p>Wir stehen hinter unserer Arbeit und setzen uns für transparente und ethische Praktiken ein. Ihre langfristige Zufriedenheit und ein positiver Einfluss auf die Gemeinschaft sind unser Antrieb. Lesen Sie mehr über unsere <a href="/about" class="text-decoration-underline">Verantwortungsinitiativen</a>.</p>
+              <p>Wir stehen hinter unserer Arbeit und setzen uns für transparente Praktiken ein. Lesen Sie mehr über unsere Verantwortungsinitiativen.</p>
             </div>
           </div>
         </div>
         <div class="row mt-4 d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <a href="/kontakt" class="btn btn-primary btn-lg contact-btn" aria-label="Kontaktieren Sie uns" style="width: 300px;"><i class="bi bi-envelope-fill me-2"></i>Kontaktieren Sie uns</a>
+            <a href="/kontakt.php" class="btn btn-primary btn-lg contact-btn" aria-label="Kontaktieren Sie uns" style="width: 300px;"><i class="bi bi-envelope-fill me-2"></i>Kontaktieren Sie uns</a>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="latest-blogs">
+      <div class="container">
+        <h2 class="text-center mb-4">Neueste Blogbeiträge</h2>
+        <div class="row">
+          <?php foreach ($latest_posts as $post): ?>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card h-100 rounded-3 border-0 shadow-sm nru">
+                <img src="<?php echo htmlspecialchars($post['image']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($post['title']); ?>">
+                <div class="card-body">
+                  <a href="<?php echo '/posts/' . basename($post['file']); ?>">
+                    <h4 class="card-title fs-6"><?php echo htmlspecialchars($post['title']); ?></h4>
+                  </a>
+                  <p class="small text-secondary"><?php echo htmlspecialchars($post['date']); ?></p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                  <a href="<?php echo '/posts/' . basename($post['file']); ?>" class="text-primary fw-bold">Weiterlesen <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Footer -->

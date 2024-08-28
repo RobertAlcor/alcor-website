@@ -1,3 +1,8 @@
+<?php
+include dirname(__FILE__) . '/includes/blog-preview.php';
+$latest_posts = getLatestBlogPosts(4);
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -5,35 +10,35 @@
   <?php include 'includes/cookie-banner.php'; ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TOP Webdesign und SEO in Wien Liesing | Alcor</title>
+  <title>Webdesign & SEO Agentur Wien | Schon ab €799,- | Alcor</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/index.php">
 
-  <meta name="description" content="WebDesign Alcor bietet Top Webdesign und SEO in Wien. Ihre Webdesign Agentur und Webdesigner in Wien. Kontaktieren Sie uns jetzt.">
+  <meta name="description" content="Webdesign in Wien und SEO-Optimierung. Professionelle Websites für Unternehmen in Wien Liesing. Kontaktieren Sie uns für Webdesign und SEO.">
   <meta name="robots" content="index, follow">
-  <meta name="keywords" content="Webdesign Wien, Webdesigner Wien, Webdesign Agentur Wien, Webdesign Firmen Wien, Webentwicklung Wien, SEO Wien, Webdesign Alcor">
+  <meta name="keywords" content="Webdesign Wien, SEO Wien, Webdesigner Wien, Webdesign Agentur Wien, SEO Lösungen Wien">
   <meta name="author" content="WebDesign Alcor">
-  <meta name="page-topic" content="Business">
-  <meta name="page-type" content="Webdesign Services">
+  <meta name="page-topic" content="Webdesign Services">
+  <meta name="page-type" content="Business">
   <meta name="audience" content="All">
   <meta name="distribution" content="Global">
   <meta name="language" content="de">
   <meta name="revisit-after" content="7 days">
 
   <!-- Open Graph / Facebook Meta-Tags -->
-  <meta property="og:title" content="WebDesign Alcor - Professionelles Webdesign in Wien und Umgebung">
-  <meta property="og:description" content="Alcor bietet professionelles Webdesign und SEO in Wien. Kontaktieren Sie uns jetzt für Webseiten und effektive Suchmaschinenoptimierung.">
-  <meta property="og:type" content="webdesign">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/">
+  <meta property="og:title" content="Webdesign & SEO Agentur Wien | Schon ab €799,- | Alcor">
+  <meta property="og:description" content="Webdesign in Wien und SEO-Optimierung. Professionelle Websites für Unternehmen in Wien Liesing. Kontaktieren Sie uns für Webdesign und SEO.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/index.php">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
 
   <!-- Twitter Card Daten -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:description" content="Alcor bietet professionelles Webdesign und SEO in Wien. Kontaktieren Sie uns jetzt für Webseiten und effektive Suchmaschinenoptimierung.">
-  <meta name="twitter:title" content="WebDesign Alcor - Professionelles Webdesign in Wien und Umgebung">
+  <meta name="twitter:description" content="Webdesign in Wien und SEO-Optimierung. Professionelle Websites für Unternehmen in Wien Liesing. Kontaktieren Sie uns für Webdesign und SEO.">
+  <meta name="twitter:title" content="Webdesign & SEO Agentur Wien | Schon ab €799,- | Alcor">
   <meta name="twitter:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta name="twitter:site" content="@deinTwitterName">
   <meta name="twitter:creator" content="@deinTwitterName">
@@ -75,10 +80,10 @@
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "WebDesign-Alcor",
-      "url": "https://www.webdesign-alcor.at/",
+      "url": "https://www.webdesign-alcor.at/index.php",
       "logo": "https://www.webdesign-alcor.at/assets/logo/alcor.jpg",
       "image": [
-        "https://www.webdesign-alcor.at/assets/img/ogwebdesign.jpg",
+        "https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg",
         "https://www.webdesign-alcor.at/assets/logo/webdesign-wien.jpg"
       ],
       "description": "Top Webdesigner in Wien bieten Ihnen das, was Sie haben wollen! Ragen Sie mit Ihrem Webdesign in Wien aus der Masse heraus. Kontaktieren Sie uns noch heute!",
@@ -211,38 +216,43 @@
 
 </head>
 
+
 <body>
+  <?php include 'includes/social-sharing.php'; ?>
   <?php include 'includes/navigation.php'; ?>
 
   <!-- Hero Section -->
   <header id="hero" role="banner" aria-label="Hauptbanner">
     <div class="container">
       <div class="row pt-lg-0 pt-5 text-center text-lg-start align-items-end">
-        <div class="col-lg-8 col-xl-6  mb-5 pb-0 pb-lg-5">
-          <h1 class="display-4 fw-bolder text-dark"><strong>Webdesign und SEO in Wien Liesing</strong></h1>
-          <h2 class="lead fw-bold d-none">Webagentur in Wien für Profi Webdesign in Wien</h2>
-          <h3 class="text-accent fw-bold fs-5"><strong>Webdesign Agentur in Wien</strong> für Privatpersonen und Unternehmer, spezialisiert auf <strong>Webdesign und SEO</strong></h3>
-          <p>
-            Webdesign in Wien, Niederösterreich und Burgenland bieten wir optimale Homepages für Unternehmen und Privatpersonen an. Unsere <strong>Webdesigner in Wien</strong> entwickeln maßgeschneiderte Lösungen, die auf Ihre speziellen Anforderungen abgestimmt sind. Unsere Kunden können auf unsere umfassende Erfahrung in Webdesign und SEO in Wien vertrauen.
-          </p>
+        <div class="col-lg-8 col-xl-6 mb-5 pb-0 pb-lg-5 mt-0 mt-md-5">
 
+          <h1 class="display-5 fw-bolder text-dark mb-3"><strong>Webdesign und SEO in Wien Liesing ab € 799,-</strong></h1>
+          <h2 class="lead fw-bold d-none">Webagentur in Wien für erstklassiges Webdesign</h2>
+          <h3 class="text-accent fw-bold fs-5 mb-3"><strong>Webdesign Agentur in Wien</strong> für Privatpersonen und Unternehmer in ganz Österreich</h3>
+          <p>
+            <strong>Webdesign in Wien</strong> – optimale Homepages für Unternehmen und Privatpersonen. Unsere Webdesigner in Wien entwickeln individuelle Lösungen, die genau auf Ihre Bedürfnisse abgestimmt sind.
+          </p>
           <div class="google-review-stars py-2">
             <span class="average-rating">
-              <i class="bi bi-google"> <b>GoogleScore</b></i> <span id="average-score" class="mx-2 fw-bold">5.0</span><span id="average-stars"></span>
+              <img src="/assets/icons/google.webp" alt="Webdesign Alcor Google Bewertung">
+              <span class="fw-bold">Google Review Score:</span>
+              <span id="average-score" class="mx-2 fw-bold"></span>
+              <span id="average-stars"></span>
             </span>
           </div>
 
-          <div class="hero-buttons pt-3 d-flex flex-column flex-md-row align-items-start align-items-md-start justify-content-center justify-content-md-start">
-            <a href="/services" class="btn btn-primary btn-lg mb-3 mb-md-0 me-0 me-md-4" aria-label="Mehr über unsere Services erfahren">
+          <div class="hero-buttons pt-3 d-flex flex-column flex-md-row align-items-start justify-content-center">
+            <a href="/services.php" class="btn btn-primary btn-lg mb-3 mb-md-0 me-0 me-md-4" aria-label="Mehr über unsere Services erfahren">
               <i class="bi bi-rocket-takeoff"></i> LEISTUNGEN
             </a>
-            <a href="/kontakt" class="btn btn-lg btn-outline" aria-label="Kontaktieren Sie uns">
-              <i class="bi bi-envelope-at me-1"></i> KONTAKT
+            <a href="/webdesign-preise.php" class="btn btn-lg btn-outline" aria-label="Webdesign Preise">
+              <i class="bi bi-currency-exchange me-1"></i> PREISE
             </a>
           </div>
         </div>
         <div class="col-lg-4 col-xl-6 mb-0">
-          <img src="/assets/img/heroimgzwei.webp" alt="Beispiel für Webdesign in Wien" class="img-fluid px-0 px-sm-5 px-lg-0" width="600" height="400">
+          <img src="/assets/img/heroimgzwei.webp" alt="Beispiel für maßgeschneidertes Webdesign in Wien" class="img-fluid px-0 px-sm-5 px-lg-0" width="600" height="400">
         </div>
       </div>
     </div>
@@ -251,18 +261,18 @@
   <section id="marquee" class="p-0">
     <div class="marquee-container text-uppercase shadow">
       <div class="marquee-content" aria-label="Marquee">
-        <h2 class="p"><strong>WebDesign</strong></h2>
-        <h2 class="p"><strong>WebDevelopment</strong></h2>
-        <h2 class="p"><strong>Bildbearbeitung</strong></h2>
-        <h2 class="p"><strong>Fotografie</strong></h2>
-        <h2 class="p"><strong>Künstliche Intelligenz</strong></h2>
-        <h2 class="p"><strong>Python</strong></h2>
-        <h2 class="p"><strong>SEO</strong></h2>
-        <h2 class="p"><strong>Responsive Design</strong></h2>
-        <h2 class="p"><strong>Branding</strong></h2>
-        <h2 class="p"><strong>Visitenkarten</strong></h2>
-        <h2 class="p"><strong>Briefpapier</strong></h2>
-        <h2 class="p"><strong>Logo Erstellung</strong></h2>
+        <span class="p me-3 fs-6 fs-md-5">WebDesign</span>
+        <span class="p me-3 fs-6 fs-md-5">WebDevelopment</span>
+        <span class="p me-3 fs-6 fs-md-5">Bildbearbeitung</span>
+        <span class="p me-3 fs-6 fs-md-5">Fotografie</span>
+        <span class="p me-3 fs-6 fs-md-5">Künstliche Intelligenz</span>
+        <span class="p me-3 fs-6 fs-md-5">Python</span>
+        <span class="p me-3 fs-6 fs-md-5">SEO</span>
+        <span class="p me-3 fs-6 fs-md-5">Responsive Design</span>
+        <span class="p me-3 fs-6 fs-md-5">Branding</span>
+        <span class="p me-3 fs-6 fs-md-5">Visitenkarten</span>
+        <span class="p me-3 fs-6 fs-md-5">Briefpapier</span>
+        <span class="p me-3 fs-6 fs-md-5">Logo Erstellung</span>
       </div>
     </div>
   </section>
@@ -272,7 +282,7 @@
       <!-- Breadcrumb Navigation -->
       <?php
       include('includes/breadcrumbs.php');
-      getBreadcrumbs('/index');
+      getBreadcrumbs('/index.php');
       ?>
     </div>
   </section>
@@ -283,10 +293,12 @@
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-md-8">
             <h2>Webdesign in Wien</h2>
-            <h3 class="text-accent"><strong>Ihre Webdesign Agentur im 23. Bezirk, <a href="/posts/ux-webdesign-liesing">Liesing</a></strong></h3>
-            <p>Sind Sie auf der Suche nach einem professionellen <strong>Webdesign in Wien</strong>, das eine Top-Positionierung bei Google sicherstellt? Genau das liefern wir mit unseren Services! Setzen Sie auf Webdesign Alcor und bekommen Sie Webseiten, die sowohl technisch einwandfrei als auch optisch beeindruckend sind.</p>
+            <h3 class="text-accent fw-bold">Ihre Webdesign Agentur im 23. Bezirk, <a href="/posts/ux-webdesign-liesing.php">Liesing</a></h3>
+            <p>Suchen Sie nach einem professionellen Webdesign in Wien, das bei Google Top-Positionen erreicht? Mit unseren Services erhalten Sie Webseiten, die sowohl technisch einwandfrei als auch optisch beeindruckend sind.</p>
 
-            <p><a href="/about">Wir</a> sind weit entfernt von einer herkömmlichen Webdesign-Agentur in Wien. Unsere <strong>Webdesigner in Wien</strong> erstellen großartige Homepages, die <a href="/posts/ux-webdesign-liesing">ästhetisch ansprechend</a> und technisch hervorragend sind. Wir offerieren zahlreiche Vorzüge, die andere <strong>Webdesign Agenturen in Wien</strong> nicht vorweisen können. Jetzt Angebot über das <a href="/kontakt">Kontaktformular</a> einholen und überzeugen Sie sich selbst.</p>
+            <p><a href="/about.php">Wir</a> sind mehr als eine herkömmliche Webdesign-Agentur in Wien. Unsere <strong>Webdesigner in Wien</strong> erstellen Homepages, die <a href="/posts/ux-webdesign-liesing.php">ästhetisch ansprechend</a> und technisch erstklassig sind. Jetzt Angebot über das Kontaktformular einholen und überzeugen Sie sich selbst.
+            </p>
+            <a href="/kontakt.php" class="btn btn-primary text-center mt-3"><i class="bi bi-cursor-fill me-2"></i> jetzt unverbindliches Angebot anfordern</a>
           </div>
         </div>
       </div>
@@ -296,12 +308,12 @@
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-8 col-12 text-center">
-            <h2 class="display-6 fw-bold">Warum WebDesign Alcor in Wien?</h2>
-            <p><strong>Webdesign in Wien</strong> ist unsere Leidenschaft. Unsere <strong>Webdesigner in Wien</strong> erstellen <a href="/posts/handprogrammierte-webseiten-vs-wordpress">handcodierte Webseiten ohne WordPress</a>, was zahlreiche Vorteile mit sich bringt:</p>
+            <h2 class="display-6 fw-bold">Warum WebDesign Alcor in Wien wählen?</h2>
+            <p>Webdesign in Wien ist unsere Leidenschaft. Unsere <strong>Webdesigner in Wien</strong> erstellen <a href="/posts/handprogrammierte-webseiten-vs-wordpress.php">handcodierte Webseiten ohne WordPress</a>, die zahlreiche Vorteile bieten:</p>
           </div>
         </div>
         <div class="row align-items-center">
-          <div class="col-md-7 order-2 order-md-2">
+          <div class="col-md-6 order-2 order-md-2">
             <div id="feature_list">
               <div class="feature shadow-sm">
                 <div class="feature-header" data-target="#feature_1">
@@ -309,7 +321,7 @@
                   <h3>Ladegeschwindigkeit</h3>
                 </div>
                 <div id="feature_1" class="feature-content show">
-                  <p>Die Ladegeschwindigkeit <a href="/posts/handprogrammierte-webseiten-vs-wordpress">handcodierter Webseiten</a> ist deutlich schneller, sodass Ihnen die Besucher und Google danken werden. <a href="https://pagespeed.web.dev/">Ein auf Google zur Verfügung gestellter Speedtest</a> zeigt es. Entscheiden Sie sich für <strong>Webdesign in Wien</strong> mit Alcor, und erleben Ladegeschwindigkeiten wie nie zuvor.</p>
+                  <p>Die Ladegeschwindigkeit <a href="/posts/handprogrammierte-webseiten-vs-wordpress.php">handcodierter Webseiten</a> ist deutlich höher, was sowohl Besucher als auch Google zu schätzen wissen. <a href="https://pagespeed.web.dev/">Ein Speedtest von Google</a> zeigt die Vorteile klar auf. Entscheiden Sie sich für Webdesign in Wien mit Alcor und erleben Sie außergewöhnliche Ladezeiten.</p>
                 </div>
               </div>
               <div class="feature shadow-sm">
@@ -318,7 +330,7 @@
                   <h3>Technische Perfektion</h3>
                 </div>
                 <div id="feature_2" class="feature-content">
-                  <p>Unsere Webseiten sind technisch einwandfrei und vollständig optimiert. Ihre in Zukunft erstellte Website wird durch eine mehrstufige Prüfung durchlaufen, um mögliche Schwachstellen rechtzeitig zu beseitigen. Bei WebDesign Alcor in Wien steht technische Perfektion im Mittelpunkt.</p>
+                  <p>Unsere Webseiten sind technisch einwandfrei und vollständig optimiert. Jede Webseite durchläuft eine mehrstufige Prüfung, um alle potenziellen Schwachstellen zu beseitigen. Bei WebDesign Alcor in Wien steht technische Perfektion im Vordergrund.</p>
                 </div>
               </div>
               <div class="feature shadow-sm">
@@ -327,7 +339,7 @@
                   <h3>Maximale Sicherheit</h3>
                 </div>
                 <div id="feature_3" class="feature-content">
-                  <p>Im Gegensatz zu CMS-basierten Webseiten wie WordPress, die häufig Ziel von Hackerangriffen sind, bieten unsere handcodierten Webseiten ein hohes Maß an Sicherheit. Wählen Sie Webdesign mit WebDesign Alcor für höchste Sicherheit.</p>
+                  <p>Im Gegensatz zu CMS-basierten Webseiten wie WordPress, die oft Ziel von <a href="/posts/technisch-perfekte-webseiten-vscode.php">Hackerangriffen</a> sind, bieten unsere handcodierten Webseiten ein hohes Maß an Sicherheit. Wählen Sie Webdesign mit WebDesign Alcor für höchste Sicherheit.</p>
                 </div>
               </div>
               <div class="feature shadow-sm">
@@ -336,13 +348,14 @@
                   <h3>Keine laufenden Kosten</h3>
                 </div>
                 <div id="feature_4" class="feature-content">
-                  <p>Bei uns haben Sie keine laufenden Kosten außer für Domain und Hosting. Keine Kosten für Plugins, Updates und komplett unabhängig sowie kosteneffizient. WebDesign Alcor bietet Ihnen Webdesign ohne versteckte Kosten.</p>
+                  <p>Bei uns gibt es keine laufenden Kosten außer für <a href="/faq.php">Domain und Hosting</a>. Keine zusätzlichen Kosten für Plugins, Updates oder Wartung – komplett unabhängig und kosteneffizient. WebDesign Alcor bietet Ihnen Webdesign ohne versteckte Kosten.</p>
+                  <a href="/webdesign-preise.php" class="btn btn-outline mt-3">Webdesign Preise</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-5 order-1 order-md-1 pt-lg-5">
+          <div class="col-md-6 order-1 order-md-1 pt-lg-5">
             <img src="/assets/img/warumwirimgzwei.webp" alt="Vorteile von Webdesign bei WebDesign Alcor in Wien" class="img-fluid" width="600" height="400">
           </div>
         </div>
@@ -354,7 +367,7 @@
         <div class="row justify-content-center d-flex">
           <div class="col-lg-8 col-12 text-center">
             <h2 class="display-6 fw-bold">Das sagen unsere Kunden über unser <strong>Webdesign in Wien</strong></h2>
-            <p>Unsere Kunden sind begeistert von unseren <a href="/services">Webdesign Services in Wien</a>. Lesen Sie, was sie über uns sagen und warum sie WebDesign Alcor gewählt haben.</p>
+            <p>Unsere Kunden sind begeistert von unseren <a href="/services.php">Webdesign Services in Wien</a>. Lesen Sie, was sie über uns sagen und warum sie WebDesign Alcor gewählt haben.</p>
           </div>
         </div>
         <div class="row align-items-start">
@@ -372,16 +385,19 @@
       </div>
     </section>
 
+
     <section id="wein-vergleich" class="p-0">
       <div class="container pt-5">
-        <div class="row align-items-center pt-5">
-          <div class="col-lg-6 order-2 order-lg-1 edlerwein">
+        <div class="row align-items-center pt-5 text-center text-lg-start">
+          <div class="col-lg-6 order-2 order-lg-1 edlerwein p-md-5 py-5 rounded-5">
             <h2 class="display-6 fw-bold">Unser <strong>Webdesign in Wien</strong> ist vergleichbar mit erlesenem Wein.</h2>
-            <p>Stellen Sie sich eine gut gestaltete Webseite wie einen kostbaren Tropfen vor. Unsere Webseiten werden genauso sorgfältig und mit ebenso viel Hingabe hergestellt wie ein guter Wein. Alle von uns erstellten Seiten sind einzigartig und beeindrucken durch das <a href="/posts/handprogrammierte-webseiten-vs-wordpress">handprogrammiertes Design</a> und ästhetische Eleganz.</p>
-            <p>Unser <a href="/services">Service</a> ist darauf ausgerichtet, ein höheres Niveau für Sie zu erreichen. Wir arbeiten von Anfang bis Ende eng mit Ihnen zusammen, um sicherzustellen, dass Ihre Homepage nicht nur ansprechend gestaltet ist, sondern auch technisch reibungslos funktioniert.</p>
+            <p>Stellen Sie sich eine gut gestaltete Webseite wie einen kostbaren Tropfen vor. Unsere Webseiten werden genauso sorgfältig und mit ebenso viel Hingabe hergestellt wie ein guter Wein. Alle von uns erstellten Seiten sind einzigartig und beeindrucken durch das
+              <a href="/posts/handprogrammierte-webseiten-vs-wordpress.php">handprogrammiertes Design</a> und ästhetische Eleganz.
+            </p>
+            <p>Unser <a href="/services.php">Service</a> ist darauf ausgerichtet, ein höheres Niveau für Sie zu erreichen. Wir arbeiten von Anfang bis Ende eng mit Ihnen zusammen, um sicherzustellen, dass Ihre Homepage nicht nur ansprechend gestaltet ist, sondern auch technisch reibungslos funktioniert.</p>
             <div class="row">
               <div class="col-md-6 col-lg-10 col-xl-7">
-                <a href="/kontakt" class="btn btn-primary w-100"><i class="bi bi-envelope-at me-1"></i> Ich möchte ein Angebot</a>
+                <a href="/kontakt.php" class="btn btn-primary w-100"><i class="bi bi-envelope-at me-1"></i> Ich möchte ein Angebot</a>
               </div>
             </div>
           </div>
@@ -395,29 +411,31 @@
     <?php include 'includes/banner.php'; ?>
 
     <section id="betreuung" class="py-0">
-      <div class="container pt-5">
-        <div class="row align-items-center flex-column-reverse flex-md-row pt-5">
+      <div class="container">
+        <div class="row align-items-center flex-column-reverse flex-md-row pt-5 text-center text-lg-start">
           <div class="col-lg-6 text-end mt-4 mt-md-0 order-2 order-md-1">
-            <img src="/assets/img/rundumbetreuung.webp" alt="Rundum-Betreuung für Webdesign in Wien" class="img-fluid mb-5 mb-lg-0" width="600" height="400">
+            <img src="/assets/img/rundumbetreuung.webp" alt="Rundum-Betreuung für Webdesign in Wien" class="img-fluid" width="600" height="400">
           </div>
-          <div class="col-lg-6 order-1 order-md-2">
+          <div class="col-lg-6 order-1 order-md-2 p-md-5 pt-5 rounded-5 rundum-translate">
             <h2 class="display-6 fw-bold"><strong>Webdesign Rundum-Betreuung in Wien</strong></h2>
             <p>Nachdem wir Ihre Webseite programmiert und technisch optimiert haben, bedarf es nur einer quartalsmäßigen Überprüfung, ob die Links noch aktuell sind und die Bilder die richtige Zuweisung haben. Wir bieten Ihnen eine umfassende Betreuung und regelmäßige Updates, um sicherzustellen, dass Ihre Webseite immer auf dem neuesten Stand ist.</p>
-            <p>Im Gegensatz zu WordPress benötigen unsere handcodierten Webseiten keine ständigen Plugin-Updates und verursachen keine zusätzlichen laufenden Kosten. Sie zahlen lediglich für Domain und Hosting – das war’s! Unsere <a href="/services"><strong>Webdesign Services</strong></a> bieten Ihnen die Sicherheit und Stabilität, die Ihr Unternehmen benötigt.</p>
-            <p>Mit unserer <a href="/kontakt"><strong>Webdesign Rundum-Betreuung in Wien</strong></a> können Sie sich darauf verlassen, dass Ihre Webseite immer optimal funktioniert und Ihre Online-Präsenz jederzeit aktuell und sicher ist.</p>
+            <p>Im Gegensatz zu WordPress benötigen unsere handcodierten Webseiten keine ständigen Plugin-Updates und verursachen keine zusätzlichen laufenden Kosten. Sie zahlen lediglich für Domain und Hosting – das war’s! Unsere <a href="/services.php">Webdesign Services</a> bieten Ihnen die Sicherheit und Stabilität, die Ihr Unternehmen benötigt.</p>
+            <p>Mit unserer <a href="/kontakt.php">Webdesign Rundum Betreuung in Wien</a> können Sie sich darauf verlassen, dass Ihre Webseite immer optimal funktioniert und Ihre Homepage jederzeit aktuell und sicher ist.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="seo" class="bg-dark text-light">
+
+
+    <section id="seo" class="bg-dark text-light mt-5 mt-lg-0">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center text-center text-lg-start">
           <div class="col-lg-6">
             <h2 class="display-6 fw-bold">SEO in Wien</h2>
-            <p><a href="/posts/local-seo-optimierung">Suchmaschinenoptimierung (SEO)</a> ist ein wichtiger Bestandteil jeder Webseite. Mit unserer <strong>SEO in Wien</strong> sorgen wir dafür, dass Ihre Webseite bei Google und anderen Suchmaschinen auf mindestens Seite 1 platziert wird. Unsere erfahrenen SEO-Spezialisten in Wien analysieren Ihre Webseite und entwickeln eine maßgeschneiderte Strategie, um Ihre Sichtbarkeit im Internet zu verbessern. Wir optimieren nicht nur den Inhalt Ihrer Webseite, sondern auch die technischen Aspekte, um sicherzustellen, dass Ihre Seite von Suchmaschinen gut bewertet wird.</p>
-            <p>Wir bieten Ihnen eine umfassende <a href="/services">SEO-Betreuung in Wien</a>, die sicherstellt, dass Ihre Webseite bei Google und anderen Suchmaschinen gefunden wird.</p>
-            <a href="/kontakt" class="btn btn-primary"><i class="bi bi-envelope-at me-2"></i> Jetzt anfragen</a>
+            <p><a href="/posts/local-seo-optimierung.php">Suchmaschinenoptimierung (SEO)</a> ist essenziell für jede Webseite. Mit unserer <strong>SEO in Wien</strong> sorgen wir dafür, dass Ihre Webseite bei Google auf Seite 1 erscheint. Unsere erfahrenen SEO-Spezialisten analysieren Ihre Webseite und entwickeln eine maßgeschneiderte Strategie, um Ihre <a href="/about.php">Sichtbarkeit</a> zu maximieren. Dabei optimieren wir sowohl den Inhalt als auch die technischen Aspekte Ihrer Webseite.</p>
+            <p>Unsere <a href="/services.php">SEO-Betreuung in Wien</a> stellt sicher, dass Ihre Webseite bei Google und anderen Suchmaschinen gefunden wird.</p>
+            <a href="/kontakt.php" class="btn btn-primary"><i class="bi bi-envelope-at me-2"></i> Jetzt anfragen</a>
           </div>
           <div class="col-lg-6 imgbgseo mt-5 mt-lg-0">
             <img src="/assets/img/member2.webp" alt="Suchmaschinenoptimierung in Wien" class="img-fluid rounded shadow imgbgseo" width="600" height="400">
@@ -429,8 +447,11 @@
     <section id="unterschied" class="overflow-hidden mb-5">
       <div class="container mb-lg-5">
         <div class="row d-flex justify-content-center text-center">
-          <div class="col-lg-8 comparison-header">
-            <h2 class="display-6 fw-bold">Unterschied zwischen handcodierten Webseiten und WordPress Webdesign</h2>
+          <div class="col-12 col-md-10 comparison-header">
+            <h2 class="display-6 fw-bold">Unterschied zwischen <a href="/posts/handprogrammierte-webseiten-vs-wordpress.php">handcodierten Webseiten und WordPress Webdesign</a></h2>
+            <p class="lead">
+              Mit einer handcodierten Webdesign Homepage sparen Sie mehrere tausend Euro an Wartungs- und Zusatzkosten.
+            </p>
             <div class="site-buttons mt-3">
               <a href="tel:+4366499124999" class="btn btn-primary btn-lg" aria-label="Jetzt anrufen">
                 <i class="bi bi-telephone-forward me-3"></i> Jetzt Anrufen
@@ -451,8 +472,8 @@
                 <li><i class="bi bi-lightning-fill me-2 text-success"></i> Blitzschnelle Ladezeiten</li>
                 <li><i class="bi bi-shield-lock-fill me-2 text-success"></i> Höchste Sicherheit</li>
                 <li><i class="bi bi-check-circle-fill me-2 text-success"></i> Vollständige Optimierung</li>
-                <li><i class="bi bi-wallet2 me-2 text-success"></i> Keine laufenden Kosten außer für Domain und Hosting</li>
-                <li><i class="bi bi-code-slash me-2 text-success"></i> Sauberer, ordentlicher Code mit einer flachen Hierarchie</li>
+                <li><i class="bi bi-wallet2 me-2 text-success"></i> Keine laufenden Kosten außer für <a href="/faq.php" aria-label="weiterleitung zu FAQ Seite"> Domain und Hosting</a></li>
+                <li><i class="bi bi-code-slash me-2 text-success"></i> Sauberer, ordentlicher Code mit flacher Hierarchie</li>
                 <li><i class="bi bi-graph-up-arrow me-2 text-success"></i> Keine zusätzlichen SEO-Kosten</li>
               </ul>
             </div>
@@ -466,7 +487,7 @@
               <hr>
               <ul class="list-unstyled">
                 <li><i class="bi bi-slash-circle-fill me-2 text-danger"></i> Häufig langsamer</li>
-                <li><i class="bi bi-exclamation-triangle-fill me-2 text-danger"></i> Anfälliger für Hackerangriffe</li>
+                <li><i class="bi bi-exclamation-triangle-fill me-2 text-danger"></i> Anfälliger für <a href="/posts/technisch-perfekte-webseiten-vscode.php" aria-label="weiterleitung zur blogseite technisch perfekte webseiten"> Hackerangriffe</a></li>
                 <li><i class="bi bi-tools me-2 text-danger"></i> Regelmäßige Wartung erforderlich</li>
                 <li><i class="bi bi-currency-dollar me-2 text-danger"></i> Laufende Kosten für Plugins und Updates</li>
                 <li><i class="bi bi-bug-fill me-2 text-danger"></i> Fehlerhafte Codestrukturen und sehr unübersichtlich</li>
@@ -478,36 +499,63 @@
       </div>
     </section>
 
-    <section class="p-0 bg-light">
+
+
+    <section class="bg-light">
       <div class="container">
         <div class="row d-flex justify-content-center text-center text-lg-start align-items-center">
           <div class="col-lg-6">
             <h2 class="display-6 fw-bold">Kostengünstiges Webdesign</h2>
-            <p>TOP Webdesign Ihrer Homepage und perfekte SEO Optimierung, ist das Aushängeschild Ihres Unternehmens. Wir kümmern uns darum, dass Ihre Webseite optisch ansprechend, funktional und sicher gestaltet ist.</p>
+            <p><a href="/services.php">Top Webdesign</a> und perfekte <a href="/posts/local-seo-optimierung.php">SEO-Optimierung</a> sind das Aushängeschild Ihres Unternehmens. Wir sorgen dafür, dass Ihre Webseite ansprechend, funktional und sicher ist.</p>
             <p class="lead fw-bold text-accent fs-3">
-              Sie wünschen sich eine Webseite, die reibungslos und ohne zusätzliche Kosten funktioniert?
+              Wünschen Sie eine Webseite, die reibungslos und ohne zusätzliche Kosten funktioniert?
             </p>
             <p>
-              Wir laden Sie herzlich ein, mit uns den ersten Schritt in eine erfolgreiche Zukunft zu gehen. <br><a href="/kontakt" class="fw-bold">Kontaktieren Sie uns noch heute</a> für eine kostenlose Beratung.
+              Machen Sie den ersten Schritt in eine erfolgreiche Zukunft. <br><a href="/kontakt.php" class="fw-bold">Kontaktieren Sie uns noch heute</a> für eine kostenlose Beratung.
             </p>
           </div>
-          <div class="col-lg-6">
-            <img src="/assets/img/contact-bg-webdesign-wien.webp" alt="webdesign wien alcor kontaktieren" class="img-fluid shadow">
+          <div class="col-lg-6 d-none d-md-block">
+            <div class="blogpost-placeholder-img rounded-3">
+              <img src="/assets/img/contact-bg-webdesign-wien.webp" alt="Webdesign Wien Alcor kontaktieren" class="img-fluid shadow rounded-3">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-  </main>
 
-  <!-- Footer -->
-  <?php include 'includes/footer.php'; ?>
+    <section class="latest-blogs">
+      <div class="container">
+        <h2 class="text-center mb-4">Neueste Blogbeiträge</h2>
+        <div class="row">
+          <?php foreach ($latest_posts as $post): ?>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card h-100 rounded-3 border-0 shadow-sm nru">
+                <img src="<?php echo htmlspecialchars($post['image']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($post['title']); ?>">
+                <div class="card-body">
+                  <a href="<?php echo '/posts/' . basename($post['file']); ?>">
+                    <h4 class="card-title fs-6"><?php echo htmlspecialchars($post['title']); ?></h4>
+                  </a>
+                  <p class="small text-secondary"><?php echo htmlspecialchars($post['date']); ?></p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                  <a href="<?php echo '/posts/' . basename($post['file']); ?>" class="text-primary fw-bold">Weiterlesen <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    </section>
 
-  <!-- JavaScript-Dateien -->
-  <!-- External JS Links -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-  <!-- Custom JS -->
-  <script src="/assets/js/app.min.js" defer></script>
+
+
+    <!-- Footer -->
+    <?php include 'includes/footer.php'; ?>
+
+    <!-- JavaScript-Dateien -->
+    <!-- External JS Links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/app.min.js" defer></script>
 </body>
-
-</html>

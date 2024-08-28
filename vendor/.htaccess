@@ -1,0 +1,97 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Erzwinge HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Erzwinge www in der URL
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+# Verhindert MIME
+Header set X-Content-Type-Options "nosniff"
+# Verhindert Clickjacking
+Header set X-Frame-Options "SAMEORIGIN"
+
+# Aktiviert XSS-Schutz im Browser
+Header set X-XSS-Protection "1; mode=block"
+
+# Erzwingt die Nutzung von HTTPS für die nächsten 31536000 Sekunden (1 Jahr)
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+# Setzt die Referrer-Policy
+Header always set Referrer-Policy "no-referrer-when-downgrade"
+
+# Definiert die Permissions-Policy (ehemals Feature-Policy)
+Header always set Permissions-Policy "geolocation=(self)"
+
+# Content Security Policy (CSP)
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: https://www.webdesign-alcor.at; font-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; connect-src 'self' https://nominatim.openstreetmap.org; frame-src 'none';"
+
+# Cache-Control Header für Ressourcen setzen
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|css|js|json|pdf|html)$">
+Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+# Ablaufdaten für Ressourcen setzen, um Browser-Caching zu aktivieren
+ExpiresActive On
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType application/json "access plus 1 month"
+ExpiresByType text/html "access plus 1 hour"
+ExpiresByType application/pdf "access plus 1 month"
+</IfModule>
+
+<IfModule mod_deflate.c>
+# Kompression für ausgewählte Dateitypen aktivieren, um die Übertragungsgröße zu reduzieren
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/json
+AddOutputFilterByType DEFLATE application/ld+json
+AddOutputFilterByType DEFLATE application/pdf
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE image/x-icon
+</IfModule>
+
+# Fehlerseiten definieren, um benutzerdefinierte Fehlermeldungen bereitzustellen
+ErrorDocument 400 /400.php
+ErrorDocument 401 /401.php
+ErrorDocument 403 /403.php
+ErrorDocument 404 /404.php
+ErrorDocument 405 /405.php
+ErrorDocument 408 /408.php
+ErrorDocument 422 /422.php
+ErrorDocument 429 /429.php
+ErrorDocument 500 /500.php
+ErrorDocument 501 /501.php
+ErrorDocument 502 /502.php
+ErrorDocument 503 /503.php
+ErrorDocument 504 /504.php
+ErrorDocument 505 /505.php
+
+# Verzeichnisindizierung deaktivieren, um den Zugriff auf Verzeichnislisten zu verhindern
+Options -Indexes
+ServerSignature Off
+
+# Schutz von sensiblen Dateien wie .env, um den Zugriff darauf zu verhindern
+<FilesMatch "^\.env$">
+Order allow,deny
+Deny from all
+</FilesMatch>

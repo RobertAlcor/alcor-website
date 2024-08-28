@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Update opening hours
   updateOpeningHours();
 
-  // Scroll event for shrinking navigation
-  handleScroll();
 
   // Fetch and display reviews
   fetchReviews();
@@ -21,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
   updateYear();
 
   // Initialize animations
-  initializeWarumAlcorAnimations();
   initializeMarquee();
 
   // Cache management for new visit
@@ -78,18 +75,7 @@ function updateOpeningHours() {
   }
 }
 
-function handleScroll() {
-  const navbar = $('.navbar');
-  if (navbar) {
-    window.addEventListener('scroll', () => {
-      window.requestAnimationFrame(() => {
-        const scrolled = window.scrollY > 50;
-        navbar.classList.toggle('shrink', scrolled);
-        navbar.classList.toggle('transparent', !scrolled);
-      });
-    });
-  }
-}
+
 
 async function fetchReviews() {
   try {
@@ -193,13 +179,6 @@ function updateYear() {
   if (currentYearElement) currentYearElement.textContent = new Date().getFullYear();
 }
 
-function initializeWarumAlcorAnimations() {
-  $$('#warum-alcor .col-md-3').forEach(element => {
-    element.style.cursor = 'pointer';
-    element.addEventListener('mouseenter', () => animateCard(element, true));
-    element.addEventListener('mouseleave', () => animateCard(element, false));
-  });
-}
 
 function animateCard(element, isEntering) {
   const card = element.querySelector('.card-custom');

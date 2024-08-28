@@ -9,7 +9,7 @@
   <title>FAQ - Webdesign und SEO in Wien | Alcor</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/faq">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/faq.php">
 
   <meta name="description" content="WebDesign Alcor bietet professionelles Webdesign und SEO in Wien. Hier finden Sie Antworten auf häufig gestellte Fragen und Erklärungen zu wichtigen Begriffen.">
   <meta name="robots" content="index, follow">
@@ -23,10 +23,10 @@
   <meta name="revisit-after" content="7 days">
 
   <!-- Open Graph / Facebook Meta-Tags -->
-  <meta property="og:title" content="FAQ - WebDesign Alcor - Professionelles Webdesign in Wien und Umgebung">
+  <meta property="og:title" content="FAQ - Webdesign und SEO in Wien | Alcor">
   <meta property="og:description" content="Alcor bietet professionelles Webdesign und SEO in Wien. Hier finden Sie Antworten auf häufig gestellte Fragen und Erklärungen zu wichtigen Begriffen.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/faq">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/faq.php">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
@@ -34,8 +34,8 @@
   <!-- Twitter Card Daten -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:description" content="Alcor bietet professionelles Webdesign und SEO in Wien. Hier finden Sie Antworten auf häufig gestellte Fragen und Erklärungen zu wichtigen Begriffen.">
-  <meta name="twitter:title" content="FAQ - WebDesign Alcor - Professionelles Webdesign in Wien und Umgebung">
-  <meta name="twitter:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
+  <meta name="twitter:title" content="FAQ - Webdesign und SEO in Wien | Alcor>
+  <meta name=" twitter:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta name="twitter:site" content="@deinTwitterName">
   <meta name="twitter:creator" content="@deinTwitterName">
 
@@ -69,6 +69,7 @@
 
 <body>
   <?php include 'includes/navigation.php'; ?>
+  <?php include 'includes/social-sharing.php'; ?>
 
   <header id="faq-hero" class="bg-dark text-light py-5">
     <div class="container-fluid">
@@ -86,7 +87,7 @@
       <!-- Breadcrumb Navigation -->
       <?php
       include('includes/breadcrumbs.php');
-      getBreadcrumbs('faq');
+      getBreadcrumbs('faq.php');
       ?>
     </div>
   </section>

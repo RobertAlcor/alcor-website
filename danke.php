@@ -8,7 +8,7 @@
   <title>Danke | Professionelles Webdesign und SEO in Wien und Umgebung | WebDesign Alcor</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/danke">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/danke.php">
 
   <meta name="description" content="Vielen Dank, dass Sie WebDesign Alcor kontaktiert haben. Wir bieten professionelles Webdesign und SEO in Wien sowie in anderen österreichischen Bundesländern.">
   <meta name="robots" content="noindex, follow">
@@ -25,7 +25,7 @@
   <meta property="og:title" content="WebDesign Alcor - Professionelles Webdesign und SEO in Wien und Umgebung">
   <meta property="og:description" content="Alcor bietet professionelles Webdesign und SEO in Wien. Kontaktieren Sie uns jetzt für Webseiten und effektive Suchmaschinenoptimierung.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/danke">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/danke.php">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
@@ -119,6 +119,17 @@
 
 <body>
   <?php include 'includes/navigation.php'; ?>
+  <?php include 'includes/social-sharing.php'; ?>
+
+  <section class="sec-small d-none">
+    <div class="container">
+      <!-- Breadcrumb Navigation -->
+      <?php
+      include('includes/breadcrumbs.php');
+      getBreadcrumbs('danke.php');
+      ?>
+    </div>
+  </section>
 
   <main>
     <section aria-label="Danke Nachricht">
@@ -127,7 +138,7 @@
           <div class="col-md-8 offset-md-2">
             <h1 class="display-4">Vielen Dank!</h1>
             <p class="lead">Wir haben Ihre Anfrage erhalten und werden uns so schnell wie möglich bei Ihnen melden.</p>
-            <a href="https://www.webdesign-alcor.at" class="btn btn-primary mt-4">Zurück zur Startseite</a>
+            <a href="/index.php" class="btn btn-primary mt-4">Zurück zur Startseite</a>
           </div>
         </div>
       </div>

@@ -165,14 +165,18 @@ section {
   color: var(--accent);
 }
 
+.text-red {
+  color: var(--red);
+}
+
 /* CTA Banner */
 #cta-banner {
-  background: var(--accent);
   color: var(--white);
   padding: 50px 0;
   position: relative;
   overflow: hidden;
   text-align: center;
+  background-color: var(--accent);
 }
 
 #cta-banner .container {
@@ -187,18 +191,13 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
+  background-image: url('/assets/img/webdesign-wien-services-alcor.webp');
   background-size: cover;
   background-position: center;
   opacity: 0.2;
   z-index: 0;
 }
 
-#cta-banner .btn-primary,
-#cta-banner h2,
-#cta-banner h3,
-#cta-banner p {
-  animation: fadeInUp 1s ease-in-out;
-}
 
 /* Hero Section */
 #hero {
@@ -220,6 +219,11 @@ section {
   opacity: 0.2;
   z-index: -1;
   filter: blur(3px);
+}
+
+.google-review-stars > .average-rating > img {
+  width: 60px;
+  mix-blend-mode: multiply;
 }
 
 @media (max-width: 575.98px) {
@@ -258,18 +262,86 @@ section {
 }
 
 /* Navbar */
-.navbar * {
+/* .navbar * {
   font-family: var(--font-secondary);
 }
 
-.navbar.shrink {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
 
 #header-logo {
   filter: invert();
   width: 200px;
+} */
+
+
+/* Navbar Styles */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  top: -1px;
 }
+
+.navbar.shrink {
+  background-color: #222;
+  /* Noch dunkler beim Scrollen */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#header-logo {
+  width: 200px;
+  transition: width 0.3s ease;
+  filter: invert(100);
+}
+
+.navbar.shrink #header-logo {
+  width: 120px;
+  /* Schrumpft beim Scrollen */
+}
+
+.nav-link {
+  position: relative;
+  color: var(--text-dark) !important;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent) !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+  padding: 0.6rem 2rem;
+  /* Größerer und auffälligerer Button */
+  font-size: 1rem;
+}
+
+.btn-warning {
+  background-color: #f0a500;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #d48806;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Marquee */
 .marquee-container {
@@ -295,8 +367,23 @@ section {
 }
 
 /* Feature Section */
+
+/* FEATURESECTION TRY */
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+
+
+/* FEATURESECTION TRY END */
+
+
 .feature {
-  background-color: rgba(var(--white-rgba), 0.5);
+  background-color: rgba(var(--white-rgba), 1);
   margin: 1rem 0;
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -524,8 +611,6 @@ section {
 .edlerwein {
   transform: translateX(8rem);
   background-color: rgba(var(--white-rgba), 0.9);
-  padding: 2rem;
-  border-radius: var(--border-radius);
 }
 
 @media screen and (max-width: 991px) {
@@ -557,6 +642,17 @@ section {
 
 #betreuung p {
   line-height: 1.6;
+}
+
+.rundum-translate {
+  transform: translateX(-7rem);
+  background-color: rgba(var(--white-rgba), 0.9);
+}
+
+@media screen and (max-width: 991px) {
+  .rundum-translate {
+    transform: translate(0);
+  }
 }
 
 /* Image Background SEO */
@@ -640,11 +736,12 @@ section {
   width: 300px;
   height: 300px;
   border: 20px solid var(--green);
-  border-radius: var(--border-radius);
+  border-radius: 50%;
   top: -3rem;
   left: -4rem;
   z-index: -1;
   pointer-events: none;
+  background-color: var(--green);
 }
 
 .ring-right::before {
@@ -658,6 +755,7 @@ section {
   right: -4rem;
   z-index: -1;
   pointer-events: none;
+  background-color: var(--red);
 }
 
 @media screen and (max-width: 992px) {
@@ -1234,49 +1332,6 @@ section {
   background-color: #ffffff;
 }
 
-/* Sidebar Styling */
-.sidebar-fixed {
-  position: fixed;
-  top: 20%;
-  right: 0;
-  width: 350px;
-  max-width: 100%;
-  padding-right: 20px;
-  margin-right: 20px;
-  z-index: 1000;
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar-fixed h3 {
-  color: #343a40;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-.sidebar-fixed ul {
-  list-style: none;
-  padding-left: 0;
-  text-align: right;
-}
-
-.sidebar-fixed ul li {
-  margin-bottom: 10px;
-}
-
-.sidebar-fixed ul li a {
-  text-decoration: none;
-  color: var(--accent);
-  transition: color 0.3s;
-}
-
-.sidebar-fixed ul li a:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
 
 
 
@@ -1319,6 +1374,7 @@ section {
 .pagination .page-item .page-link {
   color: var(--accent);
   border-radius: var(--border-radius);
+  margin: 0 0.5rem
 }
 
 .pagination .page-item.active .page-link {
@@ -1328,3 +1384,321 @@ section {
 }
 
 /* BLOG END */
+
+
+
+/* PREISE */
+
+#preise {
+  position: relative;
+}
+
+#preise::before {
+  position: absolute;
+  content: "";
+  background-image: url(/assets/img/webdesign-rundumbetreuung-wien.webp);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  /* filter: blur(5px) grayscale(100); */
+
+}
+
+#pricing-header {
+  color: white;
+  padding: 5rem 0;
+  position: relative;
+  text-align: center;
+}
+
+#pricing-header .display-4 {
+  font-family: var(--font-secondary);
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#pricing-header .lead {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  color: #f8f9fa;
+  margin-top: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#pricing-header p {
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  color: #f8f9fa;
+  margin-top: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#pricing-header .pricing-header-content {
+  position: relative;
+  z-index: 2;
+}
+
+#pricing-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+
+
+
+.card {
+  border-radius: var(--border-radius);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: var(--accent);
+  color: var(--white);
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  text-align: center;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.card-title {
+  font-family: var(--font-secondary);
+  font-size: 1.6rem;
+  color: var(--dark);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.package-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--green);
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.package-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.package-card:hover {
+  border-color: var(--accent);
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-right: 10px;
+}
+
+.icon-check {
+  color: var(--green);
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+
+#contact-banner {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#contact-banner h3 {
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+#contact-banner p.lead {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+
+
+
+#ongoing-services {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+}
+
+#ongoing-services h2 {
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+#ongoing-services h4 {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+#ongoing-services p {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+#ongoing-services ul {
+  padding-left: 1.5rem;
+}
+
+#ongoing-services ul li {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+#ongoing-services .text-secondary {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+#ongoing-services hr {
+  border-top: 1px solid #e0e0e0;
+  margin: 2rem 0;
+}
+
+/* PREISE ENDE*/
+
+
+/* SOCIAL SHARING */
+.fixed-social-buttons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-social-buttons .social-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.fixed-social-buttons .social-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Farben für spezifische Social Buttons */
+.fixed-social-buttons .facebook {
+  background-color: #3b5998;
+}
+
+.fixed-social-buttons .instagram {
+  background-color: #e4405f;
+}
+
+.fixed-social-buttons .linkedin {
+  background-color: #0077b5;
+}
+
+.fixed-social-buttons .xing {
+  background-color: #006567;
+}
+
+.fixed-social-buttons .whatsapp {
+  background-color: #25d366;
+}
+
+.fixed-social-buttons .telegram {
+  background-color: #0088cc;
+}
+
+.fixed-social-buttons .viber {
+  background-color: #665cac;
+}
+
+.fixed-social-buttons .gmail {
+  background-color: #d14836;
+}
+
+.fixed-social-buttons .mail {
+  background-color: #0072c6;
+}
+
+/* Anpassung für mobile Geräte */
+@media (max-width: 768px) {
+  .fixed-social-buttons {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(0);
+    flex-direction: row;
+    justify-content: center;
+    /* padding: 10px 0; */
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fixed-social-buttons .social-btn {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -8,7 +8,7 @@
   <title>Impressum | Webdesign und SEO in Wien | Alcor</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/impressum">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/impressum.php">
 
   <meta name="description" content="Impressum von WebDesign Alcor. Erfahren Sie mehr über unsere professionelles Webdesign und SEO in Wien und Umgebung.">
   <meta name="robots" content="index, follow">
@@ -25,7 +25,7 @@
   <meta property="og:title" content="Impressum - WebDesign Alcor | Webdesign und SEO in Wien">
   <meta property="og:description" content="Impressum von WebDesign Alcor. Erfahren Sie mehr über unsere professionellen Webdesign- und SEO-Dienstleistungen in Wien und Umgebung. Kontaktieren Sie uns für maßgeschneiderte Lösungen.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.webdesign-alcor.at/impressum">
+  <meta property="og:url" content="https://www.webdesign-alcor.at/impressum.php">
   <meta property="og:image" content="https://www.webdesign-alcor.at/assets/img/webdesign-wien.jpg">
   <meta property="og:site_name" content="WebDesign Alcor">
   <meta property="og:locale" content="de_AT">
@@ -75,7 +75,7 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "WebDesign Alcor",
-      "url": "https://www.webdesign-alcor.at/",
+      "url": "https://www.webdesign-alcor.at/impressum.php",
       "logo": "https://www.webdesign-alcor.at/assets/logo/alcor.jpg",
       "contactPoint": {
         "@type": "ContactPoint",
@@ -99,6 +99,7 @@
 
   <!-- Navigation -->
   <?php include 'includes/navigation.php'; ?>
+  <?php include 'includes/social-sharing.php'; ?>
 
 
 
@@ -116,7 +117,7 @@
       <!-- Breadcrumb Navigation -->
       <?php
       include('includes/breadcrumbs.php');
-      getBreadcrumbs('impressum');
+      getBreadcrumbs('impressum.php');
       ?>
     </div>
   </section>

@@ -16,13 +16,10 @@
       </div>
       <div class="col-lg-4 d-none d-lg-block" id="footer-nav">
         <ul class="list-unstyled">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">Über Uns</a></li>
-          <li><a href="/services">Leistungen</a></li>
-          <li><a href="/kontakt">Kontakt</a></li>
-          <li><a href="/faq">FAQ</a></li>
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/datenschutz">Datenschutz</a></li>
+          <li><a href="/faq.php">FAQ</a></li>
+          <li><a href="/webdesign-preise.php">Preise</a></li>
+          <li><a href="/impressum.php">Impressum</a></li>
+          <li><a href="/datenschutz.php">Datenschutz</a></li>
         </ul>
       </div>
     </div>

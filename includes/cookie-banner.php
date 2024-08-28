@@ -3,16 +3,16 @@
   <div class="container">
     <div class="row align-items-center d-flex">
       <div class="col-lg-2 text-center text-lg-start">
-        <img src="/assets/logo/alcorlogoweiss.svg" alt="WebDesign Alcor Logo" class="img-fluid logo">
+        <img src="/assets/logo/alcorlogoweiss.svg" alt="WebDesign Alcor Logo" class="img-fluid logo my-4">
       </div>
       <div class="col-lg-6 cookie-message">
         <p class="text-light mb-0">
           Wir verwenden Cookies, um Ihnen das beste Nutzererlebnis auf unserer Website zu bieten. Einige Cookies sind erforderlich, um die Funktionalität der Website zu gewährleisten, während andere uns helfen, die Nutzung unserer Website zu analysieren und unsere Marketingaktivitäten zu optimieren. <br>
-          <a href="/impressum" target="_blank">Impressum</a> |
-          <a href="/datenschutz" class="text-decoration-underline text-light">Datenschutz</a>
+          <a href="/impressum.php" target="_blank" class="text-light">Impressum</a> |
+          <a href="/datenschutz.php" target="_blank" class="text-decoration-underline text-light">Datenschutz</a>
         </p>
       </div>
-      <div class="col-lg-4 cookie-buttons text-center text-lg-end d-flex">
+      <div class="col-lg-4 cookie-buttons text-center text-lg-end d-flex mt-4">
         <button class="btn btn-primary me-2" id="acceptCookies">Akzeptieren</button>
         <button class="btn btn-outline-light" id="settingsCookies">Einstellungen</button>
       </div>
@@ -25,7 +25,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="cookieSettingsModalLabel">Cookie-Einstellungen</h5>
+        <h4 class="modal-title" id="cookieSettingsModalLabel">Cookie-Einstellungen</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">

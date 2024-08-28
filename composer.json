@@ -1,0 +1,16 @@
+{
+    "name": "alchi/webpage_local",
+    "description": "alcorblog",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Alchimowicz",
+            "email": "office@webdesign-alcor.at"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

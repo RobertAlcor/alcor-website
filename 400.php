@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="robots" content="noindex, follow">
-  <link rel="canonical" href="https://www.webdesign-alcor.at/400">
+  <link rel="canonical" href="https://www.webdesign-alcor.at/400.php">
   <title>400 Fehlerseite - WebDesign Alcor</title>
   <meta name="description" content="Die von Ihnen angeforderte Seite kann nicht gefunden werden. Bitte überprüfen Sie die URL und versuchen Sie es erneut.">
   <?php include 'includes/cookie-banner.php'; ?>
@@ -45,11 +45,11 @@
     <section class="pt-5 pb-0" id="errordocument">
       <div class="container pt-5">
         <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-lg-6">
-            <img src="/assets/img/errorpage.webp" alt="webdesign wien error 400">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <img src="/assets/img/errorpage.webp" alt="webdesign wien error 400" class="img-fluid mt-5 mt-lg-0">
           </div>
-          <div class="col-lg-6">
-            <div class="errordocument">
+          <div class="col-lg-6 text-center text-lg-start order-1 order-lg-2">
+            <div class=" errordocument">
               <img src="/assets/logo/alcorlogoweiss.svg" alt="webagentur wien logo webdesign alcor in wien" class="img-fluid" id="header-logo">
               <h1 class="fw-bold text-accent display-2 my-5">400 - Fehler</h1>
               <p>Die Anfrage war fehlerhaft oder konnte vom Server nicht verstanden werden.</p>
